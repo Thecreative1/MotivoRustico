@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Motivo Rústico – Serviços de terraplanagem, muros em pedra e limpezas de terrenos em Guimarães.">
-  <meta name="keywords" content="terraplanagem, muros em pedra, limpeza de terrenos, Guimarães, construção rural">
+  <meta name="keywords" content="terraplanagem, muros em pedra, limpeza de terrenos, Guimarães, construção rural, sustentabilidade">
   <link rel="icon" type="image/png" href="favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Motivo Rústico – Construções e Terraplanagens</title>
@@ -25,17 +25,26 @@
       position: sticky;
       top: 0;
       z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
     header h1 {
       margin: 0;
       font-size: 28px;
+      display: flex;
+      align-items: center;
+    }
+    header h1 img {
+      height: 32px;
+      margin-right: 10px;
     }
     nav {
-      margin-top: 10px;
+      margin-top: 0;
     }
     nav a {
       color: white;
-      margin-right: 15px;
+      margin-left: 15px;
       text-decoration: none;
       font-weight: bold;
     }
@@ -65,12 +74,6 @@
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
-    .galeria figcaption {
-      text-align: center;
-      margin-top: 8px;
-      font-size: 14px;
-      color: #666;
-    }
     .whatsapp-fixo {
       position: fixed;
       bottom: 20px;
@@ -95,7 +98,7 @@
 <body>
 
 <header>
-  <h1>Motivo Rústico</h1>
+  <h1><img src="img/logo.png" alt="Logo Motivo Rústico">Motivo Rústico</h1>
   <nav>
     <a href="#servicos">Serviços</a>
     <a href="#sobre">Sobre Nós</a>
@@ -125,11 +128,21 @@
 <section id="obras">
   <h2>Obras Recentes</h2>
   <div class="galeria">
-    <figure><img src="img/img1.jpg" alt="Obra em pedra"></figure>
-    <figure><img src="img/img2.jpg" alt="Limpeza de terreno"></figure>
-    <figure><img src="img/img3.jpg" alt="Terraplanagem"></figure>
-    <figure><img src="img/img4.jpg" alt="Construção rústica"></figure>
-    <figure><img src="img/img5.jpg" alt="Detalhe de trabalho"></figure>
+    <figure>
+      <img src="img/img1.jpg" alt="Obra em pedra">
+    </figure>
+    <figure>
+      <img src="img/img2.jpg" alt="Limpeza de terreno">
+    </figure>
+    <figure>
+      <img src="img/img3.jpg" alt="Terraplanagem">
+    </figure>
+    <figure>
+      <img src="img/img4.jpg" alt="Construção rústica">
+    </figure>
+    <figure>
+      <img src="img/img5.jpg" alt="Detalhe de trabalho">
+    </figure>
   </div>
 </section>
 
