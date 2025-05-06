@@ -21,7 +21,7 @@
     header {
       background-color: #d99e27;
       color: white;
-      padding: 10px 20px;
+      padding: 20px;
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -29,8 +29,18 @@
       align-items: center;
       justify-content: space-between;
     }
-    header img {
-      height: 60px;
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    .logo-container img {
+      height: 48px;
+      margin-right: 10px;
+    }
+    .logo-container span {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
     }
     nav a {
       color: white;
@@ -55,6 +65,9 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 15px;
+    }
+    .galeria figure {
+      margin: 0;
     }
     .galeria img {
       width: 100%;
@@ -85,7 +98,10 @@
 <body>
 
 <header>
-  <img src="img/logo.png" alt="Logo Motivo Rústico">
+  <div class="logo-container">
+    <img src="img/logo-sem-bg.png" alt="Logo Motivo Rústico">
+    <span>Motivo Rústico</span>
+  </div>
   <nav>
     <a href="#servicos">Serviços</a>
     <a href="#sobre">Sobre Nós</a>
@@ -107,7 +123,7 @@
 
 <section id="sobre">
   <h2>Sobre Nós</h2>
-  <p>A Motivo Rústico nasceu das mãos de <strong>Nelson Carneiro</strong>, um homem profundamente ligado à terra, ao mundo rural e às tradições. Desde pequeno que as máquinas o fascinavam — o barulho dos motores, o cheiro da terra, o trabalho físico — tudo isso foi moldando um espírito determinado e apaixonado por aquilo que faz.</p>
+  <p>A Motivo Rústico nasceu das mãos de <strong>Nelson</strong>, mais conhecido por <strong>Nelson Carneiro</strong>, um homem profundamente ligado à terra, ao mundo rural e às tradições. Desde pequeno que as máquinas o fascinavam — o barulho dos motores, o cheiro da terra, o trabalho físico — tudo isso foi moldando um espírito determinado e apaixonado por aquilo que faz.</p>
   <p>Homem de família e de valores sólidos, Nelson cresceu com o exemplo do seu avô, uma das grandes inspirações da sua vida. Foi ele quem lhe incutiu o gosto pela criação de gado, o respeito pela natureza e a importância de trabalhar com honestidade.</p>
   <p>Hoje, essa mesma paixão reflete-se em cada projeto. Muros bem assentes, terrenos limpos, nivelados com precisão e dedicação — são mais do que trabalhos: são compromissos de confiança.</p>
 </section>
@@ -115,11 +131,11 @@
 <section id="obras">
   <h2>Obras Recentes</h2>
   <div class="galeria">
-    <img src="img/img1.jpg" alt="Obra em pedra">
-    <img src="img/img2.jpg" alt="Limpeza de terreno">
-    <img src="img/img3.jpg" alt="Terraplanagem">
-    <img src="img/img4.jpg" alt="Construção rústica">
-    <img src="img/img5.jpg" alt="Detalhe de trabalho">
+    <figure><img src="img/img1.jpg" alt="Obra em pedra"></figure>
+    <figure><img src="img/img2.jpg" alt="Limpeza de terreno"></figure>
+    <figure><img src="img/img3.jpg" alt="Terraplanagem"></figure>
+    <figure><img src="img/img4.jpg" alt="Construção rústica"></figure>
+    <figure><img src="img/img5.jpg" alt="Detalhe de trabalho"></figure>
   </div>
 </section>
 
@@ -128,23 +144,9 @@
   <p><strong>Nelson Carneiro</strong></p>
   <p><a href="tel:+351918519619">+351 918 519 619</a></p>
   <p>Guimarães, com possibilidade de atuação noutras zonas mediante planeamento.</p>
-</section>
-
-<section id="formulario">
-  <h2>Envie-nos uma mensagem</h2>
-  <p>Para pedidos de orçamento, dúvidas ou esclarecimentos, utilize o formulário abaixo. Entraremos em contacto consigo com a maior brevidade possível.</p>
-  <form action="mailto:exemplo@email.com" method="post" enctype="text/plain">
-    <label for="nome">Nome:</label><br>
-    <input type="text" id="nome" name="nome" required><br><br>
-
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <label for="mensagem">Mensagem:</label><br>
-    <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
-
-    <button type="submit">Enviar</button>
-  </form>
+  <p>Tem dúvidas, precisa de um orçamento ou quer saber mais sobre os nossos serviços?<br>
+  Não hesite — ligue para nós ou, se preferir, envie-nos um email. Teremos todo o gosto em responder com brevidade.<br>
+  <strong>Email direto:</strong> <a href="mailto:Ct.motivorustico@gmail.com">Ct.motivorustico@gmail.com</a></p>
 </section>
 
 <a href="https://wa.me/351918519619" target="_blank" class="whatsapp-fixo">
