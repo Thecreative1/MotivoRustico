@@ -31,7 +31,10 @@
     nav ul {
       list-style: none;
       display: flex;
-      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
       margin: 0;
       padding: 0;
       font-size: 16px;
@@ -39,8 +42,42 @@
     nav a {
       text-decoration: none;
       color: #333;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
     }
-  </style>
+      @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0;
+      }
+      nav a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 20px;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+      section {
+        padding: 40px 20px;
+      }
+      .galeria img {
+        max-width: 100% !important;
+        height: auto !important;
+      }
+    }
+</style>
 </head>
 <body>
 
@@ -104,7 +141,7 @@
 
 <section id="galeria" style="padding: 80px 40px;">
   <h2 style="text-align: center;">Galeria</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px;">
+  <div class="galeria" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px;">
     <img src="img/img1.jpg" alt="Obra em execução" style="max-width: 300px; width: auto; height: auto; border-radius: 8px; object-fit: cover;">
     <img src="img/img2.jpg" alt="Terreno limpo e nivelado" style="max-width: 300px; width: 100%; border-radius: 8px;">
     <img src="img/img3.jpg" alt="Muro em pedra" style="max-width: 300px; width: 100%; border-radius: 8px;">
@@ -117,7 +154,11 @@
   <h2 style="text-align: center;">Contactos</h2>
   <div style="max-width: 600px; margin: 0 auto; font-size: 1.1em;">
     <p style="text-align: center;"><strong>Nelson Silva (Carneiro)</strong></p>
-    <p style="text-align: center;"><a href="tel:+351918519619" style="color: #333; text-decoration: none;">+351 918 519 619</a></p>
+    <p style="text-align: center;">
+  <a href="tel:+351918519619" style="color: #333; font-size: 1.2em; font-weight: bold; text-decoration: none;">
+    📞 +351 918 519 619
+  </a>
+</p>
     <p style="text-align: center;">Guimarães, com possibilidade de atuação noutras zonas mediante planeamento.</p>
     <p style="text-align: center;">Tem dúvidas, precisa de um orçamento ou quer saber mais sobre os nossos serviços?<br>
     Não hesite — ligue para nós ou, se preferir, envie-nos um email. Teremos todo o gosto em responder com brevidade.</p>
