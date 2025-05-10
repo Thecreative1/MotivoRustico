@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Terraplanagem, muros em pedra e limpezas de terrenos em Guimarães.">
+  <meta name="keywords" content="terraplanagem, muros em pedra, construção rústica, Guimarães, Motivo Rústico">
+  <meta name="author" content="Motivo Rústico">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <title>Motivo Rústico - Construções e Terraplanagens</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    html { scroll-padding-top: 100px; }
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -26,9 +29,6 @@
       z-index: 1000;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    header img {
-      height: 70px;
-    }
     nav ul {
       list-style: none;
       display: flex;
@@ -39,6 +39,9 @@
       margin: 0;
       padding: 0;
       font-size: 14px;
+      transition: max-height 0.3s ease;
+      overflow: hidden;
+      max-height: 500px;
     }
     nav a {
       text-decoration: none;
@@ -46,66 +49,101 @@
       font-weight: 500;
       padding: 6px 10px;
       border-radius: 4px;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s, color 0.3s;
     }
-      @media (max-width: 768px) {
-  .menu-toggle {
-    display: block !important;
-  }
+    nav a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+    @media (max-width: 768px) {
+      .menu-toggle { display: block !important; }
       nav ul {
         display: none;
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
         padding: 0;
+        max-height: 0;
       }
       nav ul.show {
         display: flex;
+        max-height: 500px;
       }
       nav a {
         display: block;
         width: 100%;
         padding: 10px 0;
       }
-      .menu-toggle {
-        display: block;
-        margin-left: auto;
-      }
     }
-
-</style>
+    .servico:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+    .hero {
+      position: relative;
+      background: url('escavadora.jpg') center center / cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 20px;
+    }
+    .hero-content h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    .hero-content p {
+      font-size: 1.3em;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 <body>
-
 <header>
   <div style="display: flex; align-items: center; gap: 15px;">
     <div style="line-height: 1;">
       <div style="font-family: 'Playfair Display', serif; font-size: 2.8em; font-weight: bold;">MTR</div>
       <div style="font-family: 'Montserrat', sans-serif; font-size: 1em; border-top: 2px solid #333; margin-top: 4px; padding-top: 4px;">
-        Motivo Rústico<br>
-        <span style="font-size: 0.9em;">construções / terraplanagem</span>
+        Motivo Rústico<br><span style="font-size: 0.9em;">construções / terraplanagem</span>
       </div>
     </div>
   </div>
-  <button class="menu-toggle" onclick="toggleMenu()" style="background: none; border: none; color: #333; font-size: 1.4em; padding: 4px 8px;">☰</button>
+  <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu de navegação" style="background: none; border: none; color: #333; font-size: 1.4em; padding: 4px 8px;">☰</button>
   <nav>
-  <ul id="nav-list" class="nav-list">
-    <li><a href="#inicio" onclick="closeMenu()">Início</a></li>
-    <li><a href="#sobre" onclick="closeMenu()">Sobre Nós</a></li>
-    <li><a href="#servicos" onclick="closeMenu()">Serviços</a></li>
-    <li><a href="#galeria" onclick="closeMenu()">Galeria</a></li>
-    <li><a href="#contactos" onclick="closeMenu()">Contactos</a></li>
-  </ul>
-</nav>
+    <ul id="nav-list" class="nav-list">
+      <li><a href="#inicio" onclick="closeMenu()">Início</a></li>
+      <li><a href="#sobre" onclick="closeMenu()">Sobre Nós</a></li>
+      <li><a href="#servicos" onclick="closeMenu()">Serviços</a></li>
+      <li><a href="#galeria" onclick="closeMenu()">Galeria</a></li>
+      <li><a href="#contactos" onclick="closeMenu()">Contactos</a></li>
+    </ul>
+  </nav>
 </header>
 
-<section id="inicio" style="padding: 100px 40px; text-align: center; background: #ffffff;">
-  <h1 style="font-size: 2.8em; margin-bottom: 20px;">Bem-vindo à Motivo Rústico</h1>
-  <p style="font-size: 1.2em; max-width: 800px; margin: 0 auto;">
-    Com sede em Guimarães, a Motivo Rústico dedica-se à construção de muros em pedra, terraplanagens e limpezas de terrenos. Trabalhamos com dedicação, respeito pela terra e paixão por fazer bem feito. A nossa missão é simples: transformar espaços com qualidade, honestidade e um toque rústico que se sente em cada detalhe.
-  </p>
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <h1>Bem-vindo à Motivo Rústico</h1>
+    <p>Com sede em Guimarães, a Motivo Rústico dedica-se à construção de muros em pedra, terraplanagens e limpezas de terrenos. Trabalhamos com dedicação, respeito pela terra e paixão por fazer bem feito.</p>
+  </div>
 </section>
-  
+
 <section id="sobre" style="padding: 80px 40px;">
   <h2>Sobre Nós</h2>
   <p>A Motivo Rústico nasceu das mãos de <strong>Nelson Silva</strong>, mais conhecido por <strong>Nelson Carneiro</strong>, um homem profundamente ligado à terra, ao mundo rural e às tradições. Desde pequeno que as máquinas o fascinavam — o barulho dos motores, o cheiro da terra, o trabalho físico — tudo isso foi moldando um espírito determinado e apaixonado por aquilo que faz.</p>
@@ -116,17 +154,17 @@
 <section id="servicos" style="padding: 80px 40px; background-color: #f5f5f5;">
   <h2 style="text-align: center;">Serviços</h2>
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px;">
-    <div style="flex: 1 1 250px; max-width: 300px; text-align: center;">
+    <div class="servico" style="flex: 1 1 250px; max-width: 300px; text-align: center;">
       <div style="font-size: 3em;">🏗️</div>
       <h3>Terraplanagem</h3>
       <p>Preparação e nivelamento de terrenos com precisão para todo o tipo de projetos de construção.</p>
     </div>
-    <div style="flex: 1 1 250px; max-width: 300px; text-align: center;">
+    <div class="servico" style="flex: 1 1 250px; max-width: 300px; text-align: center;">
       <div style="font-size: 3em;">🌲</div>
       <h3>Limpeza de Terrenos</h3>
       <p>Remoção de vegetação e limpeza florestal para manter os terrenos seguros e preparados para uso.</p>
     </div>
-    <div style="flex: 1 1 250px; max-width: 300px; text-align: center;">
+    <div class="servico" style="flex: 1 1 250px; max-width: 300px; text-align: center;">
       <div style="font-size: 3em;">🧱</div>
       <h3>Muros em Pedra</h3>
       <p>Construção de muros rústicos e resistentes, com acabamento tradicional e duradouro.</p>
@@ -150,10 +188,8 @@
   <div style="max-width: 600px; margin: 0 auto; font-size: 1.1em;">
     <p style="text-align: center;"><strong>Nelson Silva (Carneiro)</strong></p>
     <p style="text-align: center;">
-  <a href="tel:+351918519619" style="color: #333; font-size: 1.2em; font-weight: bold; text-decoration: none;">
-    📞 +351 918 519 619
-  </a>
-</p>
+      <a href="tel:+351918519619" style="color: #333; font-size: 1.2em; font-weight: bold; text-decoration: none;">📞 +351 918 519 619</a>
+    </p>
     <p style="text-align: center;">Guimarães, com possibilidade de atuação noutras zonas mediante planeamento.</p>
     <p style="text-align: center;">Tem dúvidas, precisa de um orçamento ou quer saber mais sobre os nossos serviços?<br>
     Não hesite — ligue para nós ou, se preferir, envie-nos um email. Teremos todo o gosto em responder com brevidade.</p>
@@ -167,12 +203,34 @@
   <small>Website desenvolvido por Estúdio Flávio Martins</small>
 </footer>
 
+<script>
+  function toggleMenu() {
+    const navList = document.getElementById('nav-list');
+    navList.classList.toggle('show');
+  }
+  function closeMenu() {
+    const navList = document.getElementById('nav-list');
+    if (window.innerWidth < 768) {
+      navList.classList.remove('show');
+    }
+  }
+</script>
 <a href="https://wa.me/351918519619?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20informa%C3%A7%C3%B5es%20sobre%20os%20vossos%20servi%C3%A7os." target="_blank" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; display: none; align-items: center; gap: 10px; background-color: #25D366; padding: 10px 15px; border-radius: 50px; color: white; font-weight: bold; text-decoration: none; box-shadow: 0 2px 6px rgba(0,0,0,0.3);" id="whatsapp-button">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="height: 16px; width: 16px;">
   Fale Connosco
 </a>
 
 <script>
+  function toggleMenu() {
+    const navList = document.getElementById('nav-list');
+    navList.classList.toggle('show');
+  }
+  function closeMenu() {
+    const navList = document.getElementById('nav-list');
+    if (window.innerWidth < 768) {
+      navList.classList.remove('show');
+    }
+  }
   // Mostrar botão do WhatsApp apenas em ecrãs com largura inferior a 768px
   function toggleWhatsAppButton() {
     const button = document.getElementById('whatsapp-button');
@@ -184,20 +242,6 @@
   }
   window.addEventListener('load', toggleWhatsAppButton);
   window.addEventListener('resize', toggleWhatsAppButton);
-  function closeMenu() {
-    const navList = document.getElementById('nav-list');
-    if (window.innerWidth < 768) {
-      navList.classList.remove('show');
-    }
-  }
 </script>
-
-<script>
-  function toggleMenu() {
-    const navList = document.getElementById('nav-list');
-    navList.classList.toggle('show');
-  }
-</script>
-
 </body>
 </html>
