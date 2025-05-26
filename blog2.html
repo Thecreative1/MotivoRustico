@@ -1,1 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:title" content="Muros em pedra: vantagens, tipos e dicas essenciais | Motivo Rústico">
+  <meta property="og:description" content="Descobre porque os muros em pedra são ideais para o teu terreno. Vantagens, tipos, manutenção e preços – tudo explicado de forma simples.">
+  <meta property="og:image" content="https://motivorustico.pt/img/img3.jpg">
+  <meta property="og:url" content="https://motivorustico.pt/blog2.html">
+  <meta property="og:type" content="article">
+  <meta name="description" content="Tudo sobre muros em pedra: vantagens, tipos, manutenção, preços e inspirações para a tua propriedade.">
+  <meta name="keywords" content="muros em pedra, construção, vantagens, manutenção, preços, tipos de pedra, Portugal, rústico">
+  <meta name="author" content="Motivo Rústico">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <title>Muros em pedra: vantagens, tipos e dicas essenciais | Motivo Rústico</title>
+  <style>
+    html, body {
+      max-width: 100vw;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #ffffff;
+      color: #333;
+    }
+    header, nav {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    header {
+      background-color: #d5972c;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .menu-toggle { 
+      display: none; 
+      background: none; 
+      border: none; 
+      color: #333; 
+      font-size: 1.4em; 
+      padding: 4px 8px;
+      cursor: pointer;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      transition: max-height 0.3s ease;
+      overflow: hidden;
+      max-width: 100vw;
+      box-sizing: border-box;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
+      display: block;
+    }
+    nav a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+    @media (max-width: 768px) {
+      header {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .menu-toggle { 
+        display: block;
+      }
+      nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100vw;
+        min-width: 0;
+        max-width: 100vw;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #d5972c;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.07);
+        z-index: 999;
+        padding: 0;
+      }
+      nav ul.show {
+        display: flex;
+        max-height: 500px;
+      }
+      nav a {
+        width: 100%;
+        padding: 10px 18px;
+      }
+    }
+    main {
+      max-width: 800px;
+      margin: 40px auto 40px auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      padding: 40px 30px 30px 30px;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+    .blog-meta {
+      font-size: 0.98em;
+      color: #757575;
+      margin-bottom: 28px;
+    }
+    .blog-img {
+      width: 100%;
+      max-height: 340px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 25px;
+      color: #d5972c;
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: 1em;
+      transition: color 0.2s;
+    }
+    .back-link:hover {
+      color: #b07a18;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+    }
+    .footer-links a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: underline;
+      font-size: 0.97em;
+    }
+    .footer-links a:hover {
+      text-decoration: none;
+    }
+    /* WhatsApp fixo */
+    #whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #25D366;
+      padding: 10px 15px;
+      border-radius: 50px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      font-size: 1em;
+    }
+    #whatsapp-button img {
+      height: 18px;
+      width: 18px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div style="display: flex; align-items: center; gap: 15px;">
+    <div style="line-height: 1;">
+      <div style="font-family: 'Playfair Display', serif; font-size: 2.8em; font-weight: bold;">MTR</div>
+      <div style="font-family: 'Montserrat', sans-serif; font-size: 1em; border-top: 2px solid #333; margin-top: 4px; padding-top: 4px;">
+        Motivo Rústico<br><span style="font-size: 0.9em;">construções / terraplanagem</span>
+      </div>
+    </div>
+  </div>
+  <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu de navegação">☰</button>
+  <nav>
+    <ul id="nav-list" class="nav-list">
+      <li><a href="index.html" onclick="closeMenu()">Início</a></li>
+      <li><a href="index.html#sobre" onclick="closeMenu()">Sobre Nós</a></li>
+      <li><a href="index.html#servicos" onclick="closeMenu()">Serviços</a></li>
+      <li><a href="index.html#galeria" onclick="closeMenu()">Galeria</a></li>
+      <li><a href="index.html#testemunhos" onclick="closeMenu()">Testemunhos</a></li>
+      <li><a href="index.html#contactos" onclick="closeMenu()">Contactos</a></li>
+      <li><a href="blog.html" onclick="closeMenu()">Blog</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <a class="back-link" href="blog.html">&larr; Voltar ao blog</a>
+  <img class="blog-img" src="img/img3.jpg" alt="Muro em pedra tradicional em Guimarães">
+
+  <h1>Muros em pedra: vantagens, tipos e dicas essenciais</h1>
+  <div class="blog-meta">Publicado por Motivo Rústico • Junho 2025</div>
+
+  <p>
+    Os muros em pedra são uma escolha clássica e resistente para delimitar terrenos, dar privacidade e valorizar qualquer propriedade. Em Guimarães e em todo o Minho, esta tradição mantém-se viva – e por boas razões.
+  </p>
+
+  <h2>Vantagens dos muros em pedra</h2>
+  <ul>
+    <li><strong>Durabilidade:</strong> Muros em pedra podem durar décadas (ou séculos!) com pouca manutenção.</li>
+    <li><strong>Estética intemporal:</strong> Dão um toque rústico e elegante ao espaço.</li>
+    <li><strong>Resistência ao clima:</strong> Aguentam bem chuva, vento e variações de temperatura.</li>
+    <li><strong>Valorização do terreno:</strong> Um muro bonito aumenta o valor da propriedade.</li>
+    <li><strong>Baixa manutenção:</strong> Não enferrujam nem apodrecem como outros materiais.</li>
+  </ul>
+
+  <h2>Tipos de muros em pedra</h2>
+  <ul>
+    <li><strong>Seco (tradicional):</strong> Só leva pedra, bem encaixada, sem cimento. Muito usado em campos e para paisagismo.</li>
+    <li><strong>Com argamassa:</strong> Usa cimento ou cal para maior estabilidade. Ideal para muros altos ou zonas urbanas.</li>
+    <li><strong>Decorativo:</strong> Combinação de pedras de vários tamanhos e formatos, focando mais na estética.</li>
+  </ul>
+
+  <h2>Cuidados e manutenção</h2>
+  <ul>
+    <li>Remover plantas invasoras que podem abrir fendas.</li>
+    <li>Verificar a estabilidade após chuvas fortes.</li>
+    <li>Repor pedras que possam ter sido deslocadas ou partidas.</li>
+    <li>Limpar musgo, se quiser manter o aspeto limpo (embora muitos gostem do ar natural).</li>
+  </ul>
+
+  <h2>Quanto custa fazer um muro em pedra?</h2>
+  <p>
+    O preço depende da pedra, altura, largura e se é com ou sem cimento. No Minho, valores médios vão dos <strong>60€ aos 120€/metro</strong> para um muro tradicional de altura média, mas cada caso é único – por isso, <a href="index.html#contactos" style="color: #d5972c; font-weight: bold; text-decoration: underline;">pede sempre um orçamento grátis!</a>
+  </p>
+
+  <h2>Inspirações</h2>
+  <p>
+    <em>Consulta a <a href="index.html#galeria" style="color: #d5972c; text-decoration: underline;">nossa galeria</a> para veres exemplos reais de muros em pedra feitos pela Motivo Rústico.</em>
+  </p>
+
+  <h2>Conclusão</h2>
+  <p>
+    Se queres um muro bonito, seguro e que dure muitos anos, a pedra é aposta ganha. Precisas de ideias ou orçamento? <a href="index.html#contactos" style="color: #d5972c; font-weight: bold; text-decoration: underline;">Fala connosco!</a>
+  </p>
+</main>
+
+<footer>
+  <div class="footer-links" style="margin-bottom: 8px;">
+    <a href="index.html#inicio">Início</a> |
+    <a href="index.html#servicos">Serviços</a> |
+    <a href="index.html#galeria">Galeria</a> |
+    <a href="index.html#testemunhos">Testemunhos</a> |
+    <a href="index.html#contactos">Contactos</a> |
+    <a href="blog.html">Blog</a>
+  </div>
+  Feito com honestidade e força de trabalho.<br>
+  Motivo Rústico – Construções e Terraplanagens © 2025<br>
+  <small>Website desenvolvido por Estúdio Flávio Martins</small>
+</footer>
+
+<!-- Botão WhatsApp sempre visível -->
+<a href="https://wa.me/351918519619?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20informa%C3%A7%C3%B5es%20sobre%20os%20vossos%20muros%20em%20pedra." target="_blank" id="whatsapp-button">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  Fale Connosco
+</a>
+
+<script>
+  function toggleMenu() {
+    var navList = document.getElementById('nav-list');
+    navList.classList.toggle('show');
+  }
+  function closeMenu() {
+    var navList = document.getElementById('nav-list');
+    if (window.innerWidth < 768) {
+      navList.classList.remove('show');
+    }
+  }
+  // Fechar menu ao redimensionar para desktop
+  window.addEventListener('resize', function() {
+    var navList = document.getElementById('nav-list');
+    if(window.innerWidth >= 768){
+      navList.classList.remove('show');
+    }
+  });
+</script>
+</body>
+</html>
 
