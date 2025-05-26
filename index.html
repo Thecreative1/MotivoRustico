@@ -46,7 +46,6 @@
       background-color: #ffffff;
       color: #333;
     }
-    /* -- MENU HEADER/NAV igual ao blog -- */
     header {
       background: #d5972c;
       display: flex;
@@ -107,7 +106,6 @@
       nav ul.show { display: flex; }
       nav a { width: 100%; padding: 10px 18px; }
     }
-    /* ----- FIM MENU HEADER/NAV ----- */
     .servico:hover {
       transform: scale(1.05);
       transition: transform 0.3s ease;
@@ -330,3 +328,21 @@
     var navList = document.getElementById('nav-list');
     navList.classList.toggle('show');
   }
+
+  function closeMenu() {
+    var navList = document.getElementById('nav-list');
+    if (window.innerWidth < 768) {
+      navList.classList.remove('show');
+    }
+  }
+
+  // Fechar menu ao redimensionar para desktop
+  window.addEventListener('resize', function() {
+    var navList = document.getElementById('nav-list');
+    if(window.innerWidth >= 768){
+      navList.classList.remove('show');
+    }
+  });
+</script>
+</body>
+</html>
