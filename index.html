@@ -10,26 +10,24 @@
   <meta property="og:image" content="https://motivorustico.pt/img/img1.jpg">
   <meta property="og:url" content="https://motivorustico.pt/">
   <meta property="og:type" content="website">
-
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Motivo Rústico",
-  "image": "https://motivorustico.pt/img/img1.jpg",
-  "telephone": "+351918519619",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Guimarães",
-    "addressCountry": "PT"
-  },
-  "url": "https://motivorustico.pt/",
-  "email": "Ct.motivoRustico@gmail.com",
-  "description": "Terraplanagem, muros em pedra e limpezas de terrenos em Guimarães e arredores.",
-  "areaServed": "Guimarães, Braga, Minho, Portugal"
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Motivo Rústico",
+    "image": "https://motivorustico.pt/img/img1.jpg",
+    "telephone": "+351918519619",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Guimarães",
+      "addressCountry": "PT"
+    },
+    "url": "https://motivorustico.pt/",
+    "email": "Ct.motivoRustico@gmail.com",
+    "description": "Terraplanagem, muros em pedra e limpezas de terrenos em Guimarães e arredores.",
+    "areaServed": "Guimarães, Braga, Minho, Portugal"
+  }
   </script>
-
   <meta name="description" content="Especialistas em terraplanagem, muros em pedra e limpezas de terrenos em Guimarães, Braga e Minho. Orçamentos grátis e trabalho garantido.">
   <meta name="keywords" content="terraplanagem, muros em pedra, construção rústica, Guimarães, Motivo Rústico, limpeza de terrenos, Braga, Minho">
   <meta name="author" content="Motivo Rústico">
@@ -56,6 +54,15 @@
       top: 0;
       z-index: 1000;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .menu-toggle { 
+      display: none; 
+      background: none; 
+      border: none; 
+      color: #333; 
+      font-size: 1.4em; 
+      padding: 4px 8px;
+      cursor: pointer;
     }
     nav ul {
       list-style: none;
@@ -84,7 +91,9 @@
       color: #fff;
     }
     @media (max-width: 768px) {
-      .menu-toggle { display: block !important; }
+      .menu-toggle { 
+        display: block;
+      }
       nav ul {
         display: none;
         flex-direction: column;
@@ -92,6 +101,12 @@
         width: 100%;
         padding: 0;
         max-height: 0;
+        background: #d5972c;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.07);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 999;
       }
       nav ul.show {
         display: flex;
@@ -100,7 +115,7 @@
       nav a {
         display: block;
         width: 100%;
-        padding: 10px 0;
+        padding: 10px 18px;
       }
     }
     .servico:hover {
@@ -207,7 +222,7 @@
       </div>
     </div>
   </div>
-  <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu de navegação" style="background: none; border: none; color: #333; font-size: 1.4em; padding: 4px 8px;">☰</button>
+  <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu de navegação">☰</button>
   <nav>
     <ul id="nav-list" class="nav-list">
       <li><a href="#inicio" onclick="closeMenu()">Início</a></li>
@@ -323,7 +338,22 @@
 
 <script>
   function toggleMenu() {
-    const navList = document.getElementById('nav-list');
+    var navList = document.getElementById('nav-list');
     navList.classList.toggle('show');
   }
   function closeMenu() {
+    var navList = document.getElementById('nav-list');
+    if (window.innerWidth < 768) {
+      navList.classList.remove('show');
+    }
+  }
+  // Fechar menu ao redimensionar para desktop
+  window.addEventListener('resize', function() {
+    var navList = document.getElementById('nav-list');
+    if(window.innerWidth >= 768){
+      navList.classList.remove('show');
+    }
+  });
+</script>
+</body>
+</html>
