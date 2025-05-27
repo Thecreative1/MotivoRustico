@@ -32,5 +32,9 @@
   <loc>https://motivorustico.pt/blog2.html</loc>
   <priority>0.7</priority>
 </url>
+  <url>
+  <loc>https://motivorustico.pt/blog3.html</loc>
+  <priority>0.7</priority>
+</url>
 
 </urlset>
