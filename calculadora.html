@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Muro em Pedra | Motivo Rústico</title>
+  <!-- FAQ Structured Data for SEO Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Como calcular o preço de um muro em pedra?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O preço de um muro em pedra pode ser estimado multiplicando a área frontal do muro (metros de comprimento x altura) pelo valor por metro quadrado. Em Motivo Rústico, o valor base para muro de vedação é 110 €/m², mas o preço real pode variar consoante o projeto, estado do terreno, necessidade de desaterro ou acabamentos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quantas paletes de pedra preciso para o meu muro?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As pedras são normalmente fornecidas em paletes de aproximadamente 1,5 toneladas cada. O número de paletes depende do volume do muro e do tipo de pedra utilizada."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A calculadora serve para muros com cimento ou pedra seca?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim, a calculadora serve para ambos os casos. O volume de pedra pode variar ligeiramente conforme a técnica de construção. Para um orçamento detalhado, recomendamos entrar em contacto."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    body {
+      background: #181510;
+      color: #f9d28d;
+      font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #d5972c;
+      color: #333;
+      font-family: 'Montserrat', sans-serif;
+      padding: 12px 40px;
+      font-size: 1.25em;
+      letter-spacing: 0.5px;
+      font-weight: bold;
+      text-align: left;
+    }
+    nav {
+      background: #181510;
+      color: #ffd97e;
+      padding: 0.9em 40px;
+      font-size: 1.08em;
+    }
+    nav a {
+      color: #ffd97e;
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: 500;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.2s;
+    }
+    nav a:hover {
+      border-bottom: 2px solid #ffd97e;
+    }
+    .container {
+      max-width: 440px;
+      margin: 40px auto;
+      background: #252018;
+      border-radius: 18px;
+      box-shadow: 0 4px 32px #0006;
+      padding: 2.2rem 2rem 2rem 2rem;
+    }
+    h1, h2 {
+      color: #ffde8a;
+      text-align: center;
+      margin-bottom: 22px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: .5px;
+    }
+    label {
+      display: block;
+      margin-top: 12px;
+      color: #f9d28d;
+      font-size: 1.04rem;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px 10px;
+      margin-top: 5px;
+      border-radius: 12px;
+      border: none;
+      background: #181510;
+      color: #fff6de;
+      font-size: 1rem;
+      margin-bottom: 7px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(90deg, #ffd97e, #bb9046 95%);
+      color: #3d2b00;
+      font-weight: bold;
+      border: none;
+      border-radius: 16px;
+      font-size: 1.12rem;
+      margin-top: 18px;
+      cursor: pointer;
+      transition: filter .15s;
+      box-shadow: 0 2px 12px #1116;
+    }
+    button:hover {
+      filter: brightness(1.09);
+    }
+    .result {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 14px;
+      background: #1a1408;
+      color: #ffe7ad;
+      font-size: 1.09rem;
+      box-shadow: 0 2px 8px #0004;
+    }
+    .preco {
+      color: #ffd97e;
+      font-size: 1.14rem;
+      font-weight: 500;
+      margin-top: 10px;
+    }
+    .faq {
+      margin: 44px auto 0 auto;
+      background: #181510;
+      border-radius: 12px;
+      max-width: 520px;
+      box-shadow: 0 2px 8px #0004;
+      color: #ffe7ad;
+      padding: 24px;
+      font-size: 1.08rem;
+    }
+    .faq h3 {
+      color: #ffd97e;
+      font-size: 1.13rem;
+      margin-bottom: 7px;
+      margin-top: 22px;
+    }
+    a { color: #ffd97e; }
+    .cta {
+      text-align: center;
+      margin: 38px auto 0 auto;
+      background: #ffd97e;
+      color: #181510;
+      border-radius: 14px;
+      padding: 22px 16px;
+      font-size: 1.13rem;
+      max-width: 410px;
+      font-weight: 600;
+      box-shadow: 0 2px 8px #3336;
+    }
+    .cta a { color: #181510; text-decoration: underline; font-weight: bold; }
+  </style>
+</head>
+<body>
+<header>
+  Calculadora de Muro em Pedra – Motivo Rústico
+</header>
+<nav>
+  <a href="/">Início</a>
+  <a href="/servicos">Serviços</a>
+  <a href="/galeria">Galeria</a>
+  <a href="/blog">Blog</a>
+  <a href="/contactos">Contactos</a>
+</nav>
+<div class="container">
+  <h1>Calculadora de Muro em Pedra</h1>
+  <p style="text-align:center;font-size:1.04em;margin-bottom:1.5em;">Faça uma estimativa rápida do volume de pedra, peso, número de paletes e preço aproximado para o seu muro em pedra. Valores apenas indicativos – para orçamento real contacte-nos.</p>
+  <label for="tipoMuro">Tipo de muro</label>
+  <select id="tipoMuro" onchange="atualizarLargura()">
+    <option value="suporte">Muro de suporte/retentor</option>
+    <option value="vedacao">Muro de vedação/delimitação</option>
+    <option value="decorativo">Muro decorativo/jardim</option>
+  </select>
+
+  <label for="comprimento">Comprimento do muro (metros)</label>
+  <input type="number" step="0.01" id="comprimento" placeholder="ex: 10">
+
+  <label for="altura">Altura do muro (metros)</label>
+  <input type="number" step="0.01" id="altura" placeholder="ex: 1.5">
+
+  <label for="largura">Largura do muro (metros)</label>
+  <input type="number" step="0.01" id="largura" placeholder="ex: 0.4">
+
+  <label for="tipoPedra">Tipo de pedra</label>
+  <select id="tipoPedra">
+    <option value="granito">Granito (ex: Pedra de Guimarães)</option>
+    <option value="xisto">Xisto</option>
+    <option value="outra">Outra</option>
+  </select>
+
+  <button onclick="calcularMuro()">Calcular</button>
+  <div id="resultado" class="result" style="display:none"></div>
+</div>
+
+<div class="faq">
+  <h3>Esta calculadora mostra um preço final?</h3>
+  <div>Não. O valor apresentado é apenas uma <strong>estimativa base</strong>. O preço real pode variar conforme o estado do terreno, necessidade de desaterro, recuos, acabamentos especiais, tipo de pedra, transporte ou outras condições.</div>
+  <h3>Posso pedir um orçamento real?</h3>
+  <div>Sim! Para um orçamento personalizado, detalhado e sem compromisso, <a href="/contactos">contacte-nos</a>. Analisamos sempre cada caso individualmente.</div>
+  <h3>O cálculo serve para muros com cimento ou pedra seca?</h3>
+  <div>Serve para ambos. O volume e preço apresentados são baseados nas medidas do muro. Dependendo da técnica (com cimento ou muro de pedra seca), a quantidade de pedra pode variar ligeiramente.</div>
+  <h3>Quantas paletes de pedra preciso?</h3>
+  <div>As pedras são fornecidas geralmente em paletes (~1,5 toneladas cada). O número apresentado é apenas uma estimativa para facilitar o planeamento e pedido ao fornecedor.</div>
+</div>
+
+<div class="cta">
+  <span>Pronto para avançar? <a href="/contactos">Peça já o seu orçamento detalhado »</a></span>
+</div>
+
+<script>
+  // Valores de referência para largura e preço por m²
+  const valoresMuro = {
+    suporte: { largura: 0.5, preco: 160 },    // muro de suporte: largo e caro
+    vedacao: { largura: 0.3, preco: 110 },    // vedação: médio (teu valor)
+    decorativo: { largura: 0.2, preco: 130 }  // decorativo: pequeno mas pode ter acabamento caro
+  };
+
+  function atualizarLargura() {
+    const tipo = document.getElementById('tipoMuro').value;
+    document.getElementById('largura').value = valoresMuro[tipo].largura;
+  }
+
+  function calcularMuro() {
+    const tipoMuro = document.getElementById('tipoMuro').value;
+    const comprimento = parseFloat(document.getElementById('comprimento').value);
+    const altura = parseFloat(document.getElementById('altura').value);
+    const largura = parseFloat(document.getElementById('largura').value);
+    const tipo = document.getElementById('tipoPedra').value;
+
+    if (!comprimento || !altura || !largura) {
+      document.getElementById('resultado').style.display = "block";
+      document.getElementById('resultado').innerHTML = "Por favor, preenche todos os campos.";
+      return;
+    }
+
+    // Cálculo do volume (em m³)
+    const volume = comprimento * altura * largura;
+    // Área em m² (frontal do muro)
+    const area = comprimento * altura;
+
+    // Densidade aproximada (em kg/m³)
+    let densidade = 2700; // Granito
+    if (tipo === "xisto") densidade = 2600;
+    if (tipo === "outra") densidade = 2500;
+
+    const pesoTon = (volume * densidade) / 1000; // em toneladas
+    const paletes = Math.ceil(pesoTon / 1.5);
+    // Preço estimado
+    const preco = valoresMuro[tipoMuro].preco * area;
+
+    document.getElementById('resultado').style.display = "block";
+    document.getElementById('resultado').innerHTML = `
+      <strong>Resultados (estimativa):</strong><br>
+      Volume estimado: <b>${volume.toFixed(2)} m³</b><br>
+      Peso aproximado: <b>${pesoTon.toFixed(1)} toneladas</b><br>
+      Paletes/carradas necessárias: <b>${paletes}</b><br>
+      Área frontal do muro: <b>${area.toFixed(2)} m²</b><br>
+      <span class="preco">Preço estimado: <b>${preco.toFixed(2)} €</b></span><br>
+      <br>
+      <em>Nota: Esta calculadora fornece apenas uma estimativa base.<br>
+      O preço real pode variar conforme desaterro, recuos ou acabamentos.<br>
+      Para orçamento real, <a href="/contactos" style="color:#ffd97e;text-decoration:underline">contacta-nos aqui</a>.</em>
+    `;
+  }
+</script>
+</body>
+</html>
