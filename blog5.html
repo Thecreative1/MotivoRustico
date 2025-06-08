@@ -224,4 +224,16 @@
     var navList = document.getElementById('nav-list');
     navList.classList.toggle('show');
   }
-  function
+  function closeMenu() {
+    var navList = document.getElementById('nav-list');
+    if (window.innerWidth < 768) {
+      navList.classList.remove('show');
+    }
+  }
+  window.addEventListener('resize', function() {
+    var navList = document.getElementById('nav-list');
+    if(window.innerWidth >= 768){
+      navList.classList.remove('show');
+    }
+  });
+</script>
