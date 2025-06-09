@@ -35,7 +35,16 @@
     main { max-width: 800px; margin: 40px auto 40px auto; background: #fff; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); padding: 40px 30px 30px 30px;}
     h1, h2, h3 { font-family: 'Playfair Display', serif;}
     .blog-meta { font-size: 0.98em; color: #757575; margin-bottom: 28px;}
-    .blog-img { width: 100%; max-height: 340px; object-fit: cover; border-radius: 10px; margin-bottom: 30px;}
+    .blog-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  height: auto;
+  max-height: 350px;       /* Ajusta o valor se quiseres mais/menos altura */
+  object-fit: contain;
+  background: #f8f8f8;
+}
+
     .back-link { display: inline-block; margin-bottom: 25px; color: #d5972c; text-decoration: underline; font-weight: bold; font-size: 1em; transition: color 0.2s;}
     .back-link:hover { color: #b07a18; text-decoration: none;}
     footer { text-align: center; padding: 20px; background: #333; color: #fff;}
@@ -178,7 +187,10 @@ Portador do Cartão de Cidadão/Bilhete de Identidade n.º [NÚMERO]
 Residente em: [MORADA EM PORTUGAL]
 
 Poderes:
-Confere ao seu procurador os poderes necessários para tratar de todos os assuntos relacionados com obras na propriedade situada em [MORADA DO IMÓVEL], nomeadamente requerer licenças, apresentar projetos, tratar de documentação junto das Finanças, Câmara Municipal, Conservatória do Registo Predial e demais entidades, celebrar contratos com empreiteiros, fazer pagamentos e praticar todos os atos necessários para a realização das referidas obras, podendo, para o efeito, assinar todos os documentos e requerimentos que se mostrem necessários.
+Confere ao seu procurador os poderes necessários para tratar de todos os assuntos relacionados com obras na propriedade situada em [MORADA DO IMÓVEL],
+nomeadamente requerer licenças, apresentar projetos, tratar de documentação junto das Finanças, Câmara Municipal, Conservatória do Registo Predial e demais entidades,
+celebrar contratos com empreiteiros, fazer pagamentos e praticar todos os atos necessários para a realização das referidas obras, podendo, para o efeito, 
+assinar todos os documentos e requerimentos que se mostrem necessários.
 
 [Local], [Data]
 
