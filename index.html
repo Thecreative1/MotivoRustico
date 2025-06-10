@@ -238,12 +238,26 @@
     .footer-links a:hover {
       text-decoration: none;
     }
-    @media (max-width: 700px) {
-      .hero-content h1 { font-size: 1.4em; }
-      .hero-content p { font-size: 1em; }
-      .hero-bg { height: 60vh; }
-      .hero { min-height: 320px; }
-    }
+@media (max-width: 700px) {
+  .hero {
+    align-items: initial !important;
+    min-height: 320px !important;
+    position: relative;
+  }
+  .hero-content {
+    position: absolute;
+    top: 64px;    /* Ajuda a evitar sobreposição do header (ajusta se precisares) */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 700px;
+  }
+  .hero-content h1 { font-size: 1.2em; }
+  .hero-content p { font-size: 0.98em; }
+  .scroll-down { margin-top: 18px; }
+  .hero-bg { height: 55vh; }
+}
   </style>
 </head>
 <body>
