@@ -32,6 +32,10 @@
     <loc>https://motivorustico.pt/blog6.html</loc>
     <priority>0.7</priority>
   </url>
+    <url>
+    <loc>https://motivorustico.pt/galeria.html</loc>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://motivorustico.pt/calculadora.html</loc>
     <priority>0.90</priority>
