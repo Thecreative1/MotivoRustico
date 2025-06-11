@@ -332,8 +332,6 @@
       <p>Construção de muros rústicos e resistentes, com acabamento tradicional e duradouro em Guimarães e arredores.</p>
     </div>
   </div>
-</section>
-
 <section id="galeria" style="padding: 80px 40px;">
   <h2 style="text-align: center;">
     Galeria <span style="font-size: 0.8em; color: #d5972c;">– clique nas fotos para ver mais</span>
@@ -342,44 +340,54 @@
     <a href="galeria.html" style="text-decoration:none;">
       <img src="img/img1.jpg" 
            alt="Terraplanagem de terreno em Guimarães por Motivo Rústico"
-           loading="lazy"
-           style="border-radius:12px; max-width:240px; width:100%; box-shadow:0 2px 10px #0002;">
+           loading="lazy">
     </a>
     <a href="galeria.html" style="text-decoration:none;">
       <img src="img/img2.jpg" 
            alt="Muro em pedra rústico construído pela Motivo Rústico em Braga"
-           loading="lazy"
-           style="border-radius:12px; max-width:240px; width:100%; box-shadow:0 2px 10px #0002;">
+           loading="lazy">
     </a>
     <a href="galeria.html" style="text-decoration:none;">
       <img src="img/img3.jpg" 
            alt="Limpeza de terreno agrícola na região do Minho"
-           loading="lazy"
-           style="border-radius:12px; max-width:240px; width:100%; box-shadow:0 2px 10px #0002;">
+           loading="lazy">
     </a>
     <a href="galeria.html" style="text-decoration:none;">
       <img src="img/img4.jpg" 
            alt="Trator Motivo Rústico em preparação de solo para obra rural"
-           loading="lazy"
-           style="border-radius:12px; max-width:240px; width:100%; box-shadow:0 2px 10px #0002;">
+           loading="lazy">
     </a>
     <a href="galeria.html" style="text-decoration:none;">
       <img src="img/img5.jpg" 
            alt="Jardim finalizado com passadiço em pedra por Motivo Rústico"
-           loading="lazy"
-           style="border-radius:12px; max-width:240px; width:100%; box-shadow:0 2px 10px #0002;">
+           loading="lazy">
     </a>
   </div>
   <style>
     .galeria a img {
+      width: 240px;
+      height: 180px;
+      object-fit: cover;
+      border-radius:12px;
+      box-shadow:0 2px 10px #0002;
       transition: transform .18s, box-shadow .18s;
+      display: block;
     }
     .galeria a img:hover {
       transform: scale(1.07);
       box-shadow: 0 8px 26px #0004;
     }
+    @media (max-width: 700px) {
+      .galeria a img {
+        width: 96vw;
+        height: 35vw;
+        min-height: 120px;
+        max-width: 98vw;
+      }
+    }
   </style>
 </section>
+
 
 
 <section id="testemunhos" class="testemunhos">
