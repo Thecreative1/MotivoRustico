@@ -40,4 +40,8 @@
     <loc>https://motivorustico.pt/calculadora.html</loc>
     <priority>0.90</priority>
   </url>
+    <url>
+    <loc>https://motivorustico.pt/blog-maquinas-terraplanagem.html</loc>
+    <priority>0.90</priority>
+  </url>
 </urlset>
