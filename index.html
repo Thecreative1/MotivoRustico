@@ -240,18 +240,19 @@
     }
 @media (max-width: 700px) {
   .hero {
-    align-items: initial !important;
-    min-height: 320px !important;
-    position: relative;
+    height: 55vh !important;
+    min-height: 240px !important;
+    max-height: 420px !important;
   }
   .hero-content {
-    position: absolute;
-    top: 64px;    /* Ajuda a evitar sobreposição do header (ajusta se precisares) */
-    left: 0;
-    right: 0;
+    position: static !important;  /* <- Troca aqui! */
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
     margin: 0 auto;
     padding: 0 16px;
     max-width: 700px;
+    padding-top: 24px;
   }
   .hero-content h1 { font-size: 1.2em; }
   .hero-content p { font-size: 0.98em; }
@@ -284,6 +285,7 @@
     </ul>
   </nav>
 </header>
+
 <!-- HERO PARALLAX -->
 <section class="hero" id="inicio">
   <div class="hero-bg"></div>
@@ -299,6 +301,7 @@
   </div>
   <div class="peek"></div>
 </section>
+
 <section id="sobre" style="padding: 80px 40px;">
   <h2>Sobre Nós</h2>
   <p>A Motivo Rústico nasceu das mãos de <strong>Nelson Silva</strong>, mais conhecido por <strong>Nelson Carneiro</strong>, um homem profundamente ligado à terra, ao mundo rural e às tradições. Desde pequeno que as máquinas o fascinavam — o barulho dos motores, o cheiro da terra, o trabalho físico — tudo isso foi moldando um espírito determinado e apaixonado por aquilo que faz.</p>
@@ -330,7 +333,8 @@
       <p>Construção de muros rústicos e resistentes, com acabamento tradicional e duradouro em Guimarães e arredores.</p>
     </div>
   </div>
-    </section> <!-- FECHA AQUI ANTES DA GALERIA -->
+  
+  </section> <!-- FECHA AQUI ANTES DA GALERIA -->
 <section id="galeria" style="padding: 80px 40px;">
   <h2 style="text-align: center;">
     Galeria <span style="font-size: 0.8em; color: #d5972c; display:block; font-size:1.1em;">clique nas fotos<br>para ver mais</span>
@@ -405,6 +409,7 @@
     <span style="font-weight: bold;">— Isabel, Braga</span>
   </blockquote>
 </section>
+
 <section id="contactos" style="padding: 80px 40px; background-color: #f5f5f5;">
   <h2 style="text-align: center;">Contactos</h2>
   <div style="max-width: 600px; margin: 0 auto; font-size: 1.1em;">
@@ -440,22 +445,26 @@
   Motivo Rústico – Construções e Terraplanagens © 2025<br>
   <small>Website desenvolvido por Estúdio Flávio Martins</small>
 </footer>
+
 <!-- Botão WhatsApp sempre visível -->
 <a href="https://wa.me/351918519619?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20informa%C3%A7%C3%B5es%20sobre%20os%20vossos%20servi%C3%A7os." target="_blank" id="whatsapp-button">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   Fale Connosco
 </a>
+
 <script>
   function toggleMenu() {
     var navList = document.getElementById('nav-list');
     navList.classList.toggle('show');
   }
+
   function closeMenu() {
     var navList = document.getElementById('nav-list');
     if (window.innerWidth < 768) {
       navList.classList.remove('show');
     }
   }
+
   // Fechar menu ao redimensionar para desktop
   window.addEventListener('resize', function() {
     var navList = document.getElementById('nav-list');
