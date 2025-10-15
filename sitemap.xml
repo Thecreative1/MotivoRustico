@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://motivorustico.pt/</loc>
     <priority>1.00</priority>
@@ -32,7 +32,7 @@
     <loc>https://motivorustico.pt/blog6.html</loc>
     <priority>0.7</priority>
   </url>
-    <url>
+  <url>
     <loc>https://motivorustico.pt/galeria.html</loc>
     <priority>0.7</priority>
   </url>
@@ -40,23 +40,23 @@
     <loc>https://motivorustico.pt/calculadora.html</loc>
     <priority>0.90</priority>
   </url>
-    <url>
+  <url>
     <loc>https://motivorustico.pt/blog-maquinas-terraplanagem.html</loc>
     <priority>0.90</priority>
   </url>
-      <url>
+  <url>
     <loc>https://motivorustico.pt/drenagem-aguas-pluviais-guimaraes-minho.html</loc>
     <priority>0.90</priority>
   </url>
-    <url>
+  <url>
     <loc>https://motivorustico.pt/preparar-terreno-piscina.html</loc>
     <priority>0.90</priority>
   </url>
-      <url>
+  <url>
     <loc>https://motivorustico.pt/blog-terraplanagem-feiras-guimaraes.html</loc>
     <priority>0.90</priority>
   </url>
-</urlset>
+  <!-- Em falta / novos -->
   <url>
     <loc>https://motivorustico.pt/proteger-terreno-inverno-portugal.html</loc>
     <priority>0.85</priority>
