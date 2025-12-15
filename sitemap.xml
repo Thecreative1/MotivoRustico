@@ -6,35 +6,35 @@
   </url>
   <url>
     <loc>https://motivorustico.pt/blog.html</loc>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://motivorustico.pt/blog1.html</loc>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://motivorustico.pt/blog2.html</loc>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://motivorustico.pt/blog3.html</loc>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://motivorustico.pt/blog4.html</loc>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://motivorustico.pt/blog5.html</loc>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://motivorustico.pt/blog6.html</loc>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://motivorustico.pt/galeria.html</loc>
-    <priority>0.7</priority>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://motivorustico.pt/calculadora.html</loc>
@@ -56,13 +56,20 @@
     <loc>https://motivorustico.pt/blog-terraplanagem-feiras-guimaraes.html</loc>
     <priority>0.90</priority>
   </url>
-  <!-- Em falta / novos -->
   <url>
     <loc>https://motivorustico.pt/proteger-terreno-inverno-portugal.html</loc>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://motivorustico.pt/manutencao-muros-outono-inverno.html</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://motivorustico.pt/granito-guimaraes-forca-tradicao-minho.html</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://motivorustico.pt/preparar-terreno-jardim-natal-ano-novo-guimaraes-minho.html</loc>
     <priority>0.90</priority>
   </url>
 </urlset>
