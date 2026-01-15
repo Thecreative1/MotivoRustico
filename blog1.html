@@ -13,18 +13,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
   <meta property="og:locale" content="pt_PT">
-  <meta property="og:title" content="Limpeza de terrenos: quando é obrigatória por lei? | Motivo Rústico">
-  <meta property="og:description" content="Saiba quando é obrigatório limpar o seu terreno por lei em Portugal. Explicamos as regras, prazos e consequências para proprietários.">
+  <meta property="og:title" content="Limpeza de terrenos: prazos e regras (2026) | Motivo Rústico">
+  <meta property="og:description" content="Saiba quando a limpeza de terrenos é obrigatória em Portugal, quais as faixas de gestão de combustível e o prazo de referência (com possíveis prorrogações).">
   <meta property="og:image" content="https://motivorustico.pt/img/img2.jpg">
   <meta property="og:url" content="https://motivorustico.pt/blog1.html">
+  <link rel="canonical" href="https://motivorustico.pt/blog1.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Limpeza de terrenos: prazos e regras (2026) | Motivo Rústico">
+  <meta name="twitter:description" content="Saiba quando a limpeza de terrenos é obrigatória em Portugal, quais as faixas de gestão de combustível e o prazo de referência (com possíveis prorrogações).">
+  <meta name="twitter:image" content="https://motivorustico.pt/img/img2.jpg">
+  <meta name="twitter:url" content="https://motivorustico.pt/blog1.html">
+  <meta property="article:published_time" content="2025-05-01">
+  <meta property="article:modified_time" content="2026-01-15">
   <meta property="og:type" content="article">
-  <meta name="description" content="Limpeza de terrenos: descubra quando é obrigatória por lei, prazos, regras e multas. Saiba como proteger o seu terreno e evitar problemas legais.">
-  <meta name="keywords" content="limpeza de terrenos, lei, multas, incêndios, Portugal, obrigação, prazo, proprietários, floresta">
-  <meta name="author" content="Motivo Rústico">
+  <meta name="description" content="Limpeza de terrenos em Portugal: quando é obrigatória, prazo de referência (salvo prorrogação), faixas de gestão de combustível e boas práticas para evitar coimas e reduzir o risco de incêndio.">
+  <meta name="keywords" content="limpeza de terrenos, gestão de combustível, faixas de proteção, prazo limpeza terreno, incêndios, coimas, Portugal, Guimarães, Minho, DL 82/2021, DL 124/2006">
+  <title>Limpeza de terrenos: prazos e regras (2026) | Motivo Rústico</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <title>Limpeza de terrenos: quando é obrigatória por lei? | Motivo Rústico</title>
   <style>
     html, body {
       max-width: 100vw;
@@ -49,24 +56,14 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .menu-toggle { 
-      display: none; 
-      background: none; 
-      border: none; 
-      color: #333; 
-      font-size: 1.4em; 
-      padding: 4px 8px;
-      cursor: pointer;
+      flex-wrap: wrap;
+      max-width: 100vw;
+      box-sizing: border-box;
     }
     nav ul {
       list-style: none;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 15px;
+      gap: 20px;
       margin: 0;
       padding: 0;
       font-size: 14px;
@@ -85,34 +82,34 @@
       display: block;
     }
     nav a:hover {
-      background-color: #333;
+      background: #333;
       color: #fff;
+    }
+    .menu-toggle {
+      display: none;
+      font-size: 1.6em;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #333;
+      padding: 4px 8px;
     }
     @media (max-width: 768px) {
       header {
-        padding-left: 0;
-        padding-right: 0;
+        padding: 10px 20px;
       }
-      .menu-toggle { 
+      .menu-toggle {
         display: block;
       }
       nav ul {
         display: none;
         flex-direction: column;
-        align-items: flex-start;
-        width: 100vw;
-        min-width: 0;
-        max-width: 100vw;
-        box-sizing: border-box;
-        overflow-x: hidden;
+        width: 100%;
+        background-color: #d5972c;
         position: absolute;
         top: 60px;
         left: 0;
-        right: 0;
-        background: #d5972c;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.07);
         z-index: 999;
-        padding: 0;
       }
       nav ul.show {
         display: flex;
@@ -196,19 +193,176 @@
       height: 18px;
       width: 18px;
     }
+
+    /* Partilhas e FAQ (formato simples) */
+    .share-block {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 18px 0 26px 0;
+    }
+    .share-block a,
+    .share-block button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid rgba(0,0,0,0.12);
+      background: #fff;
+      padding: 10px 12px;
+      border-radius: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      font-size: 0.95em;
+      transition: transform 0.08s ease, box-shadow 0.2s ease;
+    }
+    .share-block a:hover,
+    .share-block button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+    .share-block button {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .info-box {
+      border-left: 4px solid #d5972c;
+      background: #fff7e8;
+      padding: 14px 16px;
+      border-radius: 12px;
+      margin: 18px 0;
+    }
+    .faq-section {
+      margin-top: 35px;
+    }
+    .faq-section h2 {
+      margin-bottom: 10px;
+    }
+    .faq-q {
+      color: #d5972c;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.08em;
+      margin: 22px 0 8px 0;
+    }
+    .faq-a {
+      margin: 0 0 16px 0;
+    }
+    .related-links ul {
+      margin: 10px 0 0;
+      padding-left: 18px;
+    }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://motivorustico.pt/blog1.html"
+    },
+    "headline": "Limpeza de terrenos: prazos e regras (2026)",
+    "description": "Limpeza de terrenos em Portugal: quando é obrigatória, prazo de referência (salvo prorrogação), faixas de gestão de combustível e boas práticas para evitar coimas e reduzir o risco de incêndio.",
+    "image": "https://motivorustico.pt/img/img2.jpg",
+    "author": {
+      "@type": "Organization",
+      "name": "Motivo Rústico"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Motivo Rústico",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://motivorustico.pt/favicon.png"
+      }
+    },
+    "datePublished": "2025-05-01",
+    "dateModified": "2026-01-15"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Até quando devo limpar o terreno?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O prazo de referência é até 30 de abril, podendo existir prorrogações oficiais em alguns anos. Se recebeu uma notificação, deve cumprir o prazo indicado."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como sei se o meu terreno está numa faixa de gestão de combustível?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende da proximidade a edifícios, aglomerados e infraestruturas e do enquadramento local. Em caso de dúvida, confirme junto da Câmara Municipal e do seu PDM/cartografia."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Posso cortar e deixar os sobrantes no terreno?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não é aconselhável deixar acumulações de sobrantes, porque continuam a ser combustível. O ideal é triturar, remover ou gerir os sobrantes de forma adequada e segura."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Preciso de autorização para queimar sobrantes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Em muitos casos pode ser necessária comunicação prévia ou autorização, e as regras variam por município e pelo risco de incêndio no dia. Confirme sempre antes de queimar."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Início",
+        "item": "https://motivorustico.pt/index.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://motivorustico.pt/blog.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Limpeza de terrenos: prazos e regras (2026)",
+        "item": "https://motivorustico.pt/blog1.html"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <header>
   <div style="display: flex; align-items: center; gap: 15px;">
     <div style="line-height: 1;">
       <div style="font-family: 'Playfair Display', serif; font-size: 2.8em; font-weight: bold;">MTR</div>
-      <div style="font-family: 'Montserrat', sans-serif; font-size: 1em; border-top: 2px solid #333; margin-top: 4px; padding-top: 4px;">
+      <div style="font-family: 'Montserrat', sans-serif; font-size: 0.85em; font-weight: 500; border-top: 2px solid #333; margin-top: 4px; padding-top: 4px;">
         Motivo Rústico<br><span style="font-size: 0.9em;">construções / terraplanagem</span>
       </div>
     </div>
   </div>
+
   <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu de navegação">☰</button>
+
   <nav>
     <ul id="nav-list" class="nav-list">
       <li><a href="index.html" onclick="closeMenu()">Início</a></li>
@@ -226,48 +380,89 @@
   <a class="back-link" href="blog.html">&larr; Voltar ao blog</a>
   <img class="blog-img" src="img/img2.jpg" alt="Limpeza de terrenos obrigatória por lei">
 
-  <h1>Limpeza de terrenos: quando é obrigatória por lei?</h1>
-  <div class="blog-meta">Publicado por Motivo Rústico • Maio 2025</div>
+  <h1>Limpeza de terrenos: prazos e regras (2026)</h1>
+  <div class="blog-meta">Publicado por Motivo Rústico • Maio 2025 • Atualizado em Janeiro 2026</div>
 
   <p>
-    Em Portugal, a limpeza de terrenos é uma obrigação legal para proprietários, especialmente durante o período crítico de incêndios florestais. Esta medida pretende proteger pessoas, casas, bens e florestas, reduzindo o risco de fogo nas zonas rurais e urbanas.
+    Em Portugal, a <strong>limpeza de terrenos</strong> (gestão de combustível) é uma obrigação legal em muitas situações.
+    O objetivo é reduzir o risco de incêndio, proteger pessoas e edifícios e criar condições de segurança à volta de casas, armazéns e aglomerados.
+    No Minho — incluindo Guimarães e concelhos vizinhos — esta prevenção é especialmente importante nas zonas de interface urbano-florestal.
   </p>
+
+  <div class="share-block" aria-label="Partilhar este artigo">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmotivorustico.pt%2Fblog1.html" target="_blank" rel="noopener" aria-label="Partilhar no Facebook">Facebook</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fmotivorustico.pt%2Fblog1.html" target="_blank" rel="noopener" aria-label="Partilhar no LinkedIn">LinkedIn</a>
+    <a href="https://wa.me/?text=Limpeza%20de%20terrenos%3A%20prazos%20e%20regras%20(2026)%20-%20https%3A%2F%2Fmotivorustico.pt%2Fblog1.html" target="_blank" rel="noopener" aria-label="Partilhar no WhatsApp">WhatsApp</a>
+    <a href="mailto:?subject=Limpeza%20de%20terrenos%20(2026)%20-%20Motivo%20R%C3%BAstico&body=Veja%20o%20artigo%3A%20https%3A%2F%2Fmotivorustico.pt%2Fblog1.html" aria-label="Partilhar por email">Email</a>
+    <button type="button" onclick="copyArticleLink()" aria-label="Copiar link do artigo">Copiar link</button>
+  </div>
 
   <h2>Quando é obrigatória?</h2>
   <p>
-    De acordo com o Decreto-Lei n.º 124/2006, todos os proprietários, arrendatários, usufrutuários ou entidades que detenham terrenos rurais são obrigados a proceder à limpeza anual das suas propriedades.
+    A obrigação de gestão de combustível aplica-se, sobretudo, a <strong>proprietários</strong> (ou quem explore o terreno) quando existe risco para
+    edifícios e pessoas, nomeadamente em zonas de interface urbano-florestal. O enquadramento é operacionalizado por legislação nacional e, em muitos casos,
+    por <strong>editais/notificações municipais</strong>.
   </p>
-  <ul>
+  <div class="info-box">
+    <strong>Importante:</strong> confirme sempre o enquadramento do seu local junto da Câmara Municipal (PDM/cartografia) — especialmente se tiver dúvidas sobre limites,
+    servidões, linhas de água ou zonas classificadas.
+  </div><ul>
     <li>
-      <strong>Prazo:</strong> A limpeza deve ser feita até <strong>15 de março</strong> de cada ano (pode variar, consultar editais locais).
+      <strong>Prazo de referência:</strong> normalmente até <strong>30 de abril</strong> (podem existir <strong>prorrogações oficiais</strong> em alguns anos; consulte sempre o edital/notificações do seu município).
     </li>
     <li>
-      <strong>Onde?</strong> Em terrenos florestais, agrícolas, matos, e em áreas envolventes a edifícios (casas, armazéns, estaleiros, etc).
+      <strong>Onde?</strong> Em terrenos florestais, agrícolas e nas áreas envolventes a edifícios (casas, armazéns, estaleiros, etc.), sempre que se aplique uma faixa de gestão de combustível.
     </li>
     <li>
-      <strong>Faixas de proteção:</strong> É obrigatório limpar numa faixa de <strong>50 metros à volta de edifícios</strong> isolados, aldeias e parques de campismo. À volta de aglomerados populacionais, a faixa é de <strong>100 metros</strong>.
+      <strong>Faixas de proteção (exemplos comuns):</strong> à volta de edifícios isolados, a faixa pode ser de <strong>50 metros</strong> em território florestal (e, em certos enquadramentos, <strong>10 metros</strong> em território agrícola). Em aglomerados populacionais, a faixa é frequentemente de <strong>100 metros</strong>.
+    </li>
+    <li>
+      <strong>Coimas:</strong> o incumprimento pode dar origem a <strong>coimas elevadas</strong> e, nalguns casos, a <strong>limpeza coerciva</strong> com custos cobrados ao proprietário.
     </li>
   </ul>
 
-  <h2>O que implica a limpeza?</h2>
+  <h2>Nota importante</h2>
   <p>
-    A limpeza consiste em cortar mato, ervas, arbustos e árvores secas, e remover resíduos ou lenhas acumuladas. Árvores de copa baixa devem ser podadas para evitar que as chamas possam passar do solo para a copa.
+    Os prazos e as zonas de intervenção podem ser ajustados por condições meteorológicas e por orientações/decisões oficiais.
+    Por isso, confirme sempre a informação no ano em curso e junto da sua Câmara Municipal para garantir o cumprimento da lei.
   </p>
 
-  <h2>O que acontece se não cumprir?</h2>
-  <ul>
-    <li>
-      <strong>Coimas:</strong> Quem não cumprir pode ser multado entre <strong>280€ e 10.000€</strong> (pessoas singulares) ou <strong>1.600€ a 120.000€</strong> (empresas).
-    </li>
-    <li>
-      <strong>Limpeza coerciva:</strong> As Câmaras Municipais podem realizar a limpeza e cobrar os custos ao proprietário.
-    </li>
-  </ul>
+  <h2>Artigos relacionados</h2>
+  <div class="related-links">
+    <ul>
+      <li><a href="blog5.html">Queimar sobrantes: licenças, regras e cuidados</a></li>
+      <li><a href="proteger-terreno-inverno-portugal.html">Como proteger o seu terreno no inverno em Portugal</a></li>
+      <li><a href="drenagem-aguas-pluviais-guimaraes-minho.html">Drenagem de águas pluviais em Guimarães e no Minho</a></li>
+    </ul>
+  </div>
 
-  <h2>Nota importante:</h2>
-  <p>
-    Os prazos e as zonas de intervenção podem ser ajustados por editais municipais. Informe-se sempre junto da sua Câmara Municipal para garantir o cumprimento da lei.
-  </p>
+  <section class="faq-section" aria-label="FAQ - dúvidas frequentes">
+    <h2>FAQ – dúvidas frequentes</h2>
+
+    <h3 class="faq-q">Até quando devo limpar o terreno?</h3>
+    <p class="faq-a">
+      O prazo de referência costuma ser até <strong>30 de abril</strong>, mas pode existir <strong>prorrogação oficial</strong> em alguns anos.
+      Se recebeu uma notificação, deve cumprir o prazo indicado.
+    </p>
+
+    <h3 class="faq-q">Como sei se o meu terreno está numa faixa de gestão de combustível?</h3>
+    <p class="faq-a">
+      Depende da proximidade a edifícios, aglomerados e infraestruturas, bem como do enquadramento local.
+      Em caso de dúvida, confirme junto da sua Câmara Municipal (PDM/cartografia) antes de intervir.
+    </p>
+
+    <h3 class="faq-q">Posso cortar e deixar os sobrantes no terreno?</h3>
+    <p class="faq-a">
+      Não é aconselhável deixar acumulações de sobrantes, porque continuam a ser combustível.
+      O ideal é triturar, remover ou gerir os sobrantes de forma adequada e segura.
+    </p>
+
+    <h3 class="faq-q">Preciso de autorização para queimar sobrantes?</h3>
+    <p class="faq-a">
+      Em muitos casos pode ser necessária comunicação prévia ou autorização, e as regras variam por município e pelo risco de incêndio no dia.
+      Para saber o que se aplica ao seu caso, veja o nosso guia sobre <a href="blog5.html">queimas e queimadas</a>.
+    </p>
+  </section>
 
   <p>
     <strong>Precisa de ajuda profissional para a limpeza do seu terreno?</strong><br>
@@ -285,14 +480,14 @@
     <a href="blog.html">Blog</a>
   </div>
   Feito com honestidade e força de trabalho.<br>
-  Motivo Rústico – Construções e Terraplanagens © 2025<br>
+  Motivo Rústico – Construções e Terraplanagens © 2026<br>
   <small>Website desenvolvido por Estúdio Flávio Martins</small>
 </footer>
 
 <!-- Botão WhatsApp sempre visível -->
 <a href="https://wa.me/351918519619?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20informa%C3%A7%C3%B5es%20sobre%20os%20vossos%20servi%C3%A7os." target="_blank" id="whatsapp-button">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-  Fale Connosco
+  WhatsApp
 </a>
 
 <script>
@@ -300,20 +495,58 @@
     var navList = document.getElementById('nav-list');
     navList.classList.toggle('show');
   }
+
   function closeMenu() {
     var navList = document.getElementById('nav-list');
-    if (window.innerWidth < 768) {
-      navList.classList.remove('show');
-    }
+    navList.classList.remove('show');
   }
-  // Fechar menu ao redimensionar para desktop
+
   window.addEventListener('resize', function() {
     var navList = document.getElementById('nav-list');
-    if(window.innerWidth >= 768){
+    if(window.innerWidth > 768) {
       navList.classList.remove('show');
     }
   });
 </script>
+
+<script>
+  function copyArticleLink() {
+    var url = 'https://motivorustico.pt/blog1.html';
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(url).then(function() {
+        alert('Link copiado!');
+      }).catch(function() {
+        fallbackCopyTextToClipboard(url);
+      });
+    } else {
+      fallbackCopyTextToClipboard(url);
+    }
+  }
+
+  function fallbackCopyTextToClipboard(text) {
+    var textArea = document.createElement("textarea");
+    textArea.value = text;
+    textArea.style.position = "fixed";
+    textArea.style.top = "0";
+    textArea.style.left = "0";
+    textArea.style.width = "2em";
+    textArea.style.height = "2em";
+    textArea.style.padding = "0";
+    textArea.style.border = "none";
+    textArea.style.outline = "none";
+    textArea.style.boxShadow = "none";
+    textArea.style.background = "transparent";
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    try {
+      document.execCommand('copy');
+      alert('Link copiado!');
+    } catch (err) {
+      alert('Não foi possível copiar automaticamente. Copie este link: ' + text);
+    }
+    document.body.removeChild(textArea);
+  }
+</script>
 </body>
 </html>
-
