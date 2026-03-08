@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Calculadora de Muro em Pedra | Motivo Rústico</title>
+  <meta name="description" content="Calcule uma estimativa para o seu muro em pedra. Descubra volume, peso, número de paletes e preço aproximado com a calculadora da Motivo Rústico.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://motivorustico.pt/calculadora.html">
+
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:title" content="Calculadora de Muro em Pedra | Motivo Rústico">
+  <meta property="og:description" content="Simule já o preço do seu muro em pedra. Descubra volume, peso, número de paletes e peça orçamento grátis.">
+  <meta property="og:image" content="https://motivorustico.pt/img/img3.jpg">
+  <meta property="og:url" content="https://motivorustico.pt/calculadora.html">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calculadora de Muro em Pedra | Motivo Rústico">
+  <meta name="twitter:description" content="Simule preço e quantidade de pedra para o seu muro. Orçamentos grátis em Guimarães.">
+  <meta name="twitter:image" content="https://motivorustico.pt/img/img3.jpg">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WQ6F9E5Q7D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WQ6F9E5Q7D');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Como calcular o preço de um muro em pedra?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O preço de um muro em pedra pode ser estimado multiplicando a área frontal do muro, em metros de comprimento por altura, pelo valor por metro quadrado. O valor real pode variar consoante o terreno, tipo de pedra, acessos, drenagem e acabamentos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quantas paletes de pedra preciso para o meu muro?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As pedras são normalmente fornecidas em paletes de cerca de 1,5 toneladas. O número de paletes depende do volume do muro e do tipo de pedra selecionado."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A calculadora serve para muros com cimento ou pedra seca?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim. A calculadora serve como estimativa base para ambas as soluções. Dependendo da técnica de construção, a quantidade de pedra poderá variar ligeiramente."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#181510;
+      --bg-soft:#201b14;
+      --panel:#252018;
+      --panel-2:#1a1408;
+      --gold:#ffd97e;
+      --gold-strong:#d5972c;
+      --gold-dark:#bb9046;
+      --text:#ffe7ad;
+      --text-soft:rgba(255,231,173,.84);
+      --border:rgba(255,217,126,.16);
+      --shadow:0 12px 34px rgba(0,0,0,.32);
+      --maxw:1160px;
+      --radius:22px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      min-height:100vh;
+      background:
+        radial-gradient(circle at top, rgba(213,151,44,.10), transparent 28%),
+        linear-gradient(180deg, #1b1712 0%, #15120e 100%);
+      color:var(--text);
+      font-family:'Montserrat', Arial, sans-serif;
+      overflow-x:hidden;
+    }
+
+    a{color:var(--gold)}
+
+    header{
+      background:linear-gradient(90deg, #cf942e, #e3b050 45%, #bf8324 100%);
+      color:#2e220c;
+      box-shadow:0 3px 16px rgba(0,0,0,.16);
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    .topbar{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:14px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+
+    .brand{
+      display:inline-flex;
+      align-items:center;
+      gap:12px;
+      color:#2e220c;
+      text-decoration:none;
+      font-weight:800;
+      letter-spacing:.2px;
+      min-width:0;
+    }
+
+    .brand-mark{
+      min-width:50px;
+      height:50px;
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      background:rgba(46,34,12,.08);
+      border:1px solid rgba(46,34,12,.14);
+      font-size:1.15rem;
+      line-height:1;
+    }
+
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      line-height:1.05;
+    }
+
+    .brand-text small{
+      font-size:.74rem;
+      font-weight:700;
+      opacity:.82;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+    }
+
+    .brand-text span{
+      font-size:1.04rem;
+      font-weight:800;
+    }
+
+    .menu-toggle{
+      display:none;
+      border:0;
+      background:rgba(46,34,12,.08);
+      color:#2e220c;
+      width:46px;
+      height:46px;
+      border-radius:12px;
+      font-size:1.45rem;
+      cursor:pointer;
+    }
+
+    nav{
+      border-top:1px solid rgba(46,34,12,.08);
+      background:rgba(27,20,10,.18);
+      backdrop-filter:blur(8px);
+    }
+
+    .nav-inner{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:12px 18px;
+      display:flex;
+      align-items:center;
+      gap:22px;
+      flex-wrap:wrap;
+    }
+
+    nav a{
+      color:#fff0c9;
+      text-decoration:none;
+      font-weight:700;
+      font-size:.96rem;
+      opacity:.92;
+    }
+
+    nav a.active,
+    nav a:hover{
+      color:var(--gold);
+      opacity:1;
+      text-decoration:underline;
+      text-underline-offset:4px;
+    }
+
+    main{display:block}
+
+    .hero{
+      padding:28px 14px 12px;
+    }
+
+    .hero-grid{
+      max-width:var(--maxw);
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:minmax(0, 1.2fr) minmax(280px, .8fr);
+      gap:24px;
+      align-items:start;
+    }
+
+    .container,
+    .info-panel,
+    .faq{
+      background:linear-gradient(180deg, rgba(36,30,24,.98), rgba(23,18,13,.98));
+      border:1px solid var(--border);
+      box-shadow:var(--shadow);
+      border-radius:var(--radius);
+    }
+
+    .container{
+      padding:28px;
+    }
+
+    .info-panel{
+      padding:24px;
+      background:
+        radial-gradient(circle at top right, rgba(255,217,126,.10), transparent 24%),
+        linear-gradient(180deg, rgba(28,22,16,.98), rgba(18,14,10,.98));
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:rgba(255,217,126,.08);
+      border:1px solid rgba(255,217,126,.15);
+      color:var(--gold);
+      border-radius:999px;
+      padding:7px 12px;
+      font-size:.82rem;
+      font-weight:700;
+      letter-spacing:.03em;
+      margin-bottom:12px;
+    }
+
+    h1{
+      margin:0 0 14px;
+      color:#fff0c9;
+      line-height:1.05;
+      font-size:2.2rem;
+      letter-spacing:-.02em;
+    }
+
+    h2{
+      margin:0 0 12px;
+      color:#ffde8a;
+      font-size:1.38rem;
+    }
+
+    .intro,
+    .info-panel p,
+    .faq div,
+    .footer-brand p,
+    .footer-col p{
+      color:var(--text-soft);
+      line-height:1.75;
+      font-size:1rem;
+    }
+
+    .intro{margin:0 0 20px}
+
+    .field-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:14px 16px;
+    }
+
+    .field-full{
+      grid-column:1 / -1;
+    }
+
+    label{
+      display:block;
+      color:#ffde8a;
+      font-weight:700;
+      font-size:.95rem;
+      margin-bottom:8px;
+    }
+
+    input,
+    select{
+      width:100%;
+      min-height:50px;
+      height:50px;
+      padding:12px 14px;
+      border-radius:16px;
+      border:1px solid rgba(255,217,126,.12);
+      background:linear-gradient(180deg, #15110c, #120f0b);
+      color:#fff6de;
+      font-size:1rem;
+      outline:none;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.02);
+      appearance:none;
+      -webkit-appearance:none;
+    }
+
+    input:focus,
+    select:focus{
+      border-color:rgba(255,217,126,.58);
+      box-shadow:0 0 0 4px rgba(255,217,126,.09);
+    }
+
+    select{
+      padding-right:42px;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M6 8l4 4 4-4' stroke='%23ffd97e' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat:no-repeat;
+      background-position:right 14px center;
+      background-size:18px 18px;
+      cursor:pointer;
+    }
+
+    input::placeholder{color:rgba(255,231,173,.45)}
+
+    select option{
+      background:#1a1408;
+      color:#fff6de;
+    }
+
+    select:invalid{
+      color:rgba(255,231,173,.65);
+    }
+
+    button[type="submit"]{
+      margin-top:16px;
+      width:100%;
+      min-height:54px;
+      border:0;
+      border-radius:18px;
+      background:linear-gradient(90deg, #ffd97e, #e7b75d 52%, #c88f31 100%);
+      color:#2b1e06;
+      font-size:1rem;
+      font-weight:800;
+      cursor:pointer;
+      box-shadow:0 10px 24px rgba(0,0,0,.22);
+      transition:transform .15s ease, filter .15s ease;
+    }
+
+    button[type="submit"]:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.04);
+    }
+
+    .field-error{
+      display:none;
+      margin-top:14px;
+      border-radius:16px;
+      padding:12px 14px;
+      background:rgba(154, 29, 29, .18);
+      border:1px solid rgba(255, 124, 124, .22);
+      color:#ffd2d2;
+      line-height:1.6;
+      font-size:.95rem;
+    }
+
+    .hint,
+    .select-note,
+    .small-note{
+      color:rgba(255,231,173,.74);
+      line-height:1.65;
+      font-size:.92rem;
+    }
+
+    .select-note{margin-top:12px}
+    .hint{margin-top:12px}
+
+    .result{
+      display:none;
+      margin-top:16px;
+      border-radius:18px;
+      padding:18px;
+      background:linear-gradient(180deg, rgba(255,217,126,.08), rgba(255,217,126,.03));
+      border:1px solid rgba(255,217,126,.16);
+      color:#fff6de;
+      line-height:1.8;
+      font-size:1rem;
+    }
+
+    .result strong{
+      color:#ffde8a;
+      font-size:1.05rem;
+    }
+
+    .preco{
+      display:inline-block;
+      margin-top:4px;
+      color:#ffd97e;
+      font-size:1.08rem;
+    }
+
+    .result-actions{
+      margin-top:16px;
+      padding-top:16px;
+      border-top:1px solid rgba(255,217,126,.12);
+    }
+
+    .result-actions p{
+      margin:0 0 12px;
+      color:var(--text-soft);
+      line-height:1.7;
+    }
+
+    .btn-row{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:10px;
+      margin-bottom:12px;
+    }
+
+    .btn-cta{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-width:220px;
+      padding:14px 18px;
+      border-radius:16px;
+      text-decoration:none;
+      font-weight:800;
+      transition:transform .15s ease, filter .15s ease;
+    }
+
+    .btn-cta:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+    }
+
+    .btn-whatsapp{
+      background:linear-gradient(90deg, var(--gold), var(--gold-dark) 95%);
+      color:#3d2b00;
+    }
+
+    .btn-phone{
+      background:#181510;
+      color:var(--gold);
+      border:1px solid rgba(255,217,126,.22);
+    }
+
+    .benefits{
+      display:grid;
+      gap:14px;
+      margin-top:18px;
+    }
+
+    .benefit{
+      display:grid;
+      grid-template-columns:14px 1fr;
+      gap:12px;
+      align-items:start;
+    }
+
+    .benefit-dot{
+      width:14px;
+      height:14px;
+      border-radius:50%;
+      margin-top:5px;
+      background:radial-gradient(circle at center, #ffd97e 0%, #d5972c 70%, #aa741d 100%);
+      box-shadow:0 0 0 4px rgba(255,217,126,.08);
+    }
+
+    .benefit strong{
+      display:block;
+      color:#ffde8a;
+      margin-bottom:4px;
+      font-size:.98rem;
+    }
+
+    .benefit span{
+      display:block;
+      color:var(--text-soft);
+      line-height:1.7;
+      font-size:.95rem;
+    }
+
+    .content-section{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:18px 22px 60px;
+    }
+
+    .faq{
+      padding:26px;
+      line-height:1.75;
+      font-size:1rem;
+    }
+
+    .faq h3{
+      color:var(--gold);
+      font-size:1.05rem;
+      margin:20px 0 6px;
+    }
+
+    .cta{
+      text-align:center;
+      margin:26px auto 0;
+      background:linear-gradient(90deg, #ffd97e, #e7b75d 52%, #c88f31 100%);
+      color:#181510;
+      border-radius:18px;
+      padding:24px 18px;
+      font-size:1.08rem;
+      max-width:620px;
+      font-weight:700;
+      box-shadow:0 10px 24px rgba(0,0,0,.20);
+    }
+
+    .cta a{
+      color:#181510;
+      font-weight:800;
+      text-decoration:underline;
+    }
+
+    .site-footer{
+      margin-top:40px;
+      background:linear-gradient(180deg, rgba(23,19,14,.98), rgba(15,12,9,1));
+      border-top:1px solid rgba(255,217,126,.10);
+    }
+
+    .footer-inner{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:34px 22px 28px;
+      display:grid;
+      grid-template-columns:1.2fr .8fr .9fr;
+      gap:24px;
+    }
+
+    .footer-brand h3,
+    .footer-col h4{
+      margin:0 0 10px;
+      color:#ffde8a;
+    }
+
+    .footer-links{
+      display:grid;
+      gap:8px;
+    }
+
+    .footer-links a,
+    .footer-col a{
+      color:rgba(255,231,173,.84);
+      text-decoration:none;
+      line-height:1.7;
+    }
+
+    .footer-links a:hover,
+    .footer-col a:hover{
+      text-decoration:underline;
+    }
+
+    .footer-bottom{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:0 22px 24px;
+      color:rgba(255,231,173,.64);
+      font-size:.92rem;
+    }
+
+    .whatsapp-float{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:999;
+      background:linear-gradient(90deg, var(--gold), var(--gold-dark) 95%);
+      color:#3d2b00;
+      text-decoration:none;
+      font-weight:800;
+      border-radius:999px;
+      padding:14px 18px;
+      box-shadow:0 8px 20px rgba(0,0,0,.35);
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      transition:transform .15s ease, filter .15s ease;
+    }
+
+    .whatsapp-float:hover{
+      transform:translateY(-2px);
+      filter:brightness(1.05);
+    }
+
+    .whatsapp-float svg{
+      width:20px;
+      height:20px;
+      fill:currentColor;
+    }
+
+    @media (max-width: 920px){
+      .hero-grid{grid-template-columns:1fr}
+      .info-panel{order:-1}
+      .footer-inner{grid-template-columns:1fr 1fr}
+    }
+
+    @media (max-width: 640px){
+      .topbar,
+      .nav-inner,
+      .content-section,
+      .footer-inner,
+      .footer-bottom{
+        padding-left:16px;
+        padding-right:16px;
+      }
+
+      .topbar{
+        padding-top:12px;
+        padding-bottom:12px;
+      }
+
+      .brand-text span{font-size:.95rem}
+      .brand-text small{font-size:.66rem}
+
+      .menu-toggle{
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+      }
+
+      nav{display:none}
+      nav.is-open{display:block}
+
+      .nav-inner{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:14px;
+        padding-top:14px;
+        padding-bottom:14px;
+      }
+
+      .hero{
+        padding:14px 10px 8px;
+      }
+
+      .container,
+      .info-panel,
+      .faq{
+        padding:16px;
+        border-radius:20px;
+      }
+
+      h1{
+        font-size:1.48rem;
+        line-height:1.08;
+      }
+
+      .field-grid{
+        grid-template-columns:1fr;
+        gap:10px 12px;
+      }
+
+      input,
+      select,
+      button[type="submit"]{
+        min-height:48px;
+        height:48px;
+        font-size:16px;
+      }
+
+      .btn-row{
+        flex-direction:column;
+      }
+
+      .btn-cta{
+        width:100%;
+        min-width:100%;
+      }
+
+      .footer-inner{
+        grid-template-columns:1fr;
+        gap:18px;
+      }
+
+      .whatsapp-float{
+        right:10px;
+        bottom:10px;
+        padding:11px 13px;
+        font-size:.9rem;
+      }
+
+      body{
+        padding-bottom:calc(88px + env(safe-area-inset-bottom));
+      }
+    }
+  </style>
+</head>
+<body>
+  <header id="site-header">
+    <div class="topbar">
+      <a class="brand" href="index.html" aria-label="Motivo Rústico — Início">
+        <span class="brand-mark">MTR</span>
+        <span class="brand-text">
+          <small>Motivo Rústico</small>
+          <span>Calculadora de Muro em Pedra</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <nav id="siteNav">
+    <div class="nav-inner">
+      <a href="index.html">Início</a>
+      <a href="index.html#servicos">Serviços</a>
+      <a href="index.html#contactos">Contactos</a>
+      <a href="blog.html">Blog</a>
+      <a href="calculadora.html" class="active" aria-current="page">Calculadora</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="container">
+          <div class="eyebrow">Estimativa rápida para a sua obra</div>
+          <h1>Calculadora de Muro em Pedra</h1>
+          <p class="intro">
+            Faça uma estimativa rápida do volume de pedra, peso, número de paletes e preço aproximado para o seu muro em pedra.
+            Os valores apresentados são meramente indicativos. Para um orçamento real,
+            <a href="index.html#contactos">entre em contacto connosco</a>.
+          </p>
+
+          <form id="calculadoraForm" novalidate>
+            <div class="field-grid">
+              <div class="field-full">
+                <label for="tipoMuro">Tipo de muro</label>
+                <select id="tipoMuro" name="tipoMuro" required>
+                  <option value="" selected disabled>Selecione o tipo de muro</option>
+                  <option value="suporte">Muro de suporte</option>
+                  <option value="vedacao">Muro de vedação</option>
+                  <option value="decorativo">Muro decorativo</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="comprimento">Comprimento do muro (metros)</label>
+                <input type="number" step="0.01" min="0" inputmode="decimal" id="comprimento" name="comprimento" placeholder="Ex.: 10">
+              </div>
+
+              <div>
+                <label for="altura">Altura do muro (metros)</label>
+                <input type="number" step="0.01" min="0" inputmode="decimal" id="altura" name="altura" placeholder="Ex.: 1,5">
+              </div>
+
+              <div>
+                <label for="largura">Largura do muro (metros)</label>
+                <input type="number" step="0.01" min="0" inputmode="decimal" id="largura" name="largura" placeholder="Ex.: 0,4">
+              </div>
+
+              <div>
+                <label for="tipoPedra">Tipo de pedra</label>
+                <select id="tipoPedra" name="tipoPedra" required>
+                  <option value="" selected disabled>Selecione o tipo de pedra</option>
+                  <option value="granito">Granito</option>
+                  <option value="xisto">Xisto</option>
+                  <option value="outra">Outra pedra</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="select-note">Granito é a opção mais comum em Guimarães e no Minho.</div>
+
+            <div id="mensagemErro" class="field-error"></div>
+
+            <div class="hint">
+              A largura é sugerida automaticamente conforme o tipo de muro, mas pode ser ajustada manualmente ao seu caso.
+            </div>
+
+            <button type="submit">Calcular estimativa</button>
+
+            <div id="resultado" class="result"></div>
+          </form>
+        </div>
+
+        <aside class="info-panel">
+          <h2>O que esta calculadora lhe dá</h2>
+          <p>
+            Uma referência imediata para perceber a dimensão da obra e preparar o pedido de orçamento com mais informação.
+          </p>
+
+          <div class="benefits">
+            <div class="benefit">
+              <div class="benefit-dot"></div>
+              <div>
+                <strong>Volume e peso aproximados</strong>
+                <span>Ajuda a perceber a quantidade de pedra necessária e a logística da obra.</span>
+              </div>
+            </div>
+
+            <div class="benefit">
+              <div class="benefit-dot"></div>
+              <div>
+                <strong>Número estimado de paletes</strong>
+                <span>Útil para planeamento de transporte, armazenamento e fornecimento.</span>
+              </div>
+            </div>
+
+            <div class="benefit">
+              <div class="benefit-dot"></div>
+              <div>
+                <strong>Preço base por área frontal</strong>
+                <span>Um valor indicativo que serve como ponto de partida antes da visita ao local.</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="faq">
+        <h2>Perguntas frequentes</h2>
+
+        <h3>Esta calculadora mostra um preço final?</h3>
+        <div>
+          Não. O valor apresentado corresponde apenas a uma <strong>estimativa base</strong>.
+          O preço real pode variar conforme o estado do terreno, a necessidade de desaterro, recuos,
+          acabamentos especiais, tipo de pedra, transporte ou outras condições da obra.
+        </div>
+
+        <h3>Posso pedir um orçamento real?</h3>
+        <div>
+          Sim. Para um orçamento personalizado, detalhado e sem compromisso,
+          <a href="index.html#contactos">entre em contacto connosco</a>. Cada caso é analisado individualmente.
+        </div>
+
+        <h3>O cálculo serve para muros com cimento ou pedra seca?</h3>
+        <div>
+          Sim. Serve como estimativa base para ambas as soluções.
+          Dependendo da técnica utilizada, a quantidade de pedra pode variar ligeiramente.
+        </div>
+
+        <h3>Quantas paletes de pedra preciso?</h3>
+        <div>
+          As pedras são geralmente fornecidas em paletes de cerca de 1,5 toneladas.
+          O número apresentado é apenas indicativo, para facilitar o planeamento e o pedido ao fornecedor.
+        </div>
+      </div>
+
+      <div class="cta">
+        <span>Pronto para avançar? <a href="index.html#contactos">Solicite já o seu orçamento detalhado »</a></span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3>Motivo Rústico</h3>
+        <p>
+          Especialistas em muros de pedra, terraplanagem e soluções rústicas em Guimarães e no Minho.
+          Esta calculadora fornece uma estimativa inicial para ajudar no planeamento da sua obra.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Ligações úteis</h4>
+        <div class="footer-links">
+          <a href="index.html">Início</a>
+          <a href="index.html#servicos">Serviços</a>
+          <a href="blog.html">Blog</a>
+          <a href="calculadora.html">Calculadora</a>
+          <a href="index.html#contactos">Contactos</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Pedido de orçamento</h4>
+        <p>
+          Envie as medidas, a localização da obra e algumas fotografias. Fazemos uma análise mais rigorosa
+          e apresentamos uma proposta ajustada.
+        </p>
+        <a href="mailto:Ct.motivoRustico@gmail.com">Ct.motivoRustico@gmail.com</a><br>
+        <a href="tel:+351918519619">+351 918 519 619</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="anoAtual"></span> Motivo Rústico. Todos os direitos reservados.</div>
+  </footer>
+
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/351918519619?text=Olá!%20Pretendo%20um%20orçamento%20para%20um%20muro%20em%20pedra.%20Envio%20de%20seguida%20as%20medidas%20e%20fotografias%20da%20obra."
+    target="_blank"
+    rel="noopener"
+    aria-label="Pedir orçamento por WhatsApp"
+  >
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M19.11 17.23c-.27-.13-1.58-.78-1.82-.87-.24-.09-.42-.13-.6.13-.18.27-.69.87-.85 1.05-.16.18-.31.2-.58.07-.27-.13-1.13-.42-2.16-1.33-.8-.71-1.34-1.58-1.49-1.85-.16-.27-.02-.41.12-.55.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.13-.6-1.45-.82-1.99-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.47.07-.71.34-.24.27-.93.91-.93 2.22s.96 2.58 1.09 2.76c.13.18 1.88 2.87 4.56 4.02.64.27 1.13.43 1.52.55.64.2 1.23.17 1.69.1.52-.08 1.58-.65 1.8-1.28.22-.63.22-1.17.16-1.28-.07-.11-.24-.18-.51-.31zM16.02 3.2c-7.06 0-12.79 5.72-12.79 12.78 0 2.24.59 4.43 1.7 6.36L3 29l6.85-1.79a12.77 12.77 0 0 0 6.17 1.57h.01c7.05 0 12.78-5.73 12.78-12.79 0-3.42-1.33-6.64-3.75-9.06A12.7 12.7 0 0 0 16.02 3.2zm0 23.42h-.01a10.6 10.6 0 0 1-5.4-1.48l-.39-.23-4.07 1.07 1.09-3.97-.25-.41a10.57 10.57 0 0 1-1.62-5.63c0-5.85 4.77-10.62 10.63-10.62 2.84 0 5.5 1.1 7.51 3.11a10.54 10.54 0 0 1 3.11 7.51c0 5.86-4.77 10.63-10.6 10.63z"></path>
+    </svg>
+    WhatsApp
+  </a>
+
+  <script>
+    const WHATSAPP_NUMBER = "351918519619";
+    const PHONE_NUMBER = "+351918519619";
+
+    const form = document.getElementById("calculadoraForm");
+    const mensagemErro = document.getElementById("mensagemErro");
+    const resultado = document.getElementById("resultado");
+    const menuToggle = document.getElementById("menuToggle");
+    const siteNav = document.getElementById("siteNav");
+    const larguraInput = document.getElementById("largura");
+    const tipoMuroSelect = document.getElementById("tipoMuro");
+    const tipoPedraSelect = document.getElementById("tipoPedra");
+
+    const valoresMuro = {
+      suporte: { largura: 0.5, preco: 160, label: "Muro de suporte", message: "Muro de suporte/retentor" },
+      vedacao: { largura: 0.3, preco: 110, label: "Muro de vedação", message: "Muro de vedação/delimitação" },
+      decorativo: { largura: 0.2, preco: 130, label: "Muro decorativo", message: "Muro decorativo/jardim" }
+    };
+
+    const tiposPedra = {
+      granito: { label: "Granito", message: "Granito (ex.: Pedra de Guimarães)", densidade: 2700 },
+      xisto: { label: "Xisto", message: "Xisto", densidade: 2600 },
+      outra: { label: "Outra pedra", message: "Outra pedra", densidade: 2500 }
+    };
+
+    function formatarNumero(valor, casas = 2) {
+      return new Intl.NumberFormat("pt-PT", {
+        minimumFractionDigits: casas,
+        maximumFractionDigits: casas
+      }).format(valor);
+    }
+
+    function obterNumero(id) {
+      const campo = document.getElementById(id);
+      return parseFloat(campo.value.trim().replace(",", "."));
+    }
+
+    function mostrarErro(mensagem) {
+      mensagemErro.style.display = "block";
+      mensagemErro.textContent = mensagem;
+    }
+
+    function limparErro() {
+      mensagemErro.style.display = "none";
+      mensagemErro.textContent = "";
+    }
+
+    function atualizarLargura() {
+      const tipo = tipoMuroSelect.value;
+      if (!valoresMuro[tipo]) return;
+      if (larguraInput.dataset.editadoManual !== "true") {
+        larguraInput.value = String(valoresMuro[tipo].largura).replace(".", ",");
+      }
+    }
+
+    function calcularMuro() {
+      const tipoMuro = tipoMuroSelect.value;
+      const tipoPedra = tipoPedraSelect.value;
+      const comprimento = obterNumero("comprimento");
+      const altura = obterNumero("altura");
+      const largura = obterNumero("largura");
+
+      limparErro();
+      resultado.style.display = "none";
+      resultado.innerHTML = "";
+
+      if (!valoresMuro[tipoMuro] || !tiposPedra[tipoPedra]) {
+        mostrarErro("Selecione um tipo de muro e um tipo de pedra válidos.");
+        return;
+      }
+
+      if ([comprimento, altura, largura].some(Number.isNaN)) {
+        mostrarErro("Por favor, preencha comprimento, altura e largura com valores numéricos válidos.");
+        return;
+      }
+
+      if (comprimento <= 0 || altura <= 0 || largura <= 0) {
+        mostrarErro("Todos os valores devem ser superiores a zero.");
+        return;
+      }
+
+      if (comprimento > 1000 || altura > 20 || largura > 5) {
+        mostrarErro("Verifique as medidas introduzidas. Parece haver um valor fora do intervalo esperado para um muro.");
+        return;
+      }
+
+      const area = comprimento * altura;
+      const volume = comprimento * altura * largura;
+      const densidade = tiposPedra[tipoPedra].densidade;
+      const pesoTon = (volume * densidade) / 1000;
+      const paletes = Math.ceil(pesoTon / 1.5);
+      const preco = valoresMuro[tipoMuro].preco * area;
+
+      const tipoMuroMensagem = valoresMuro[tipoMuro].message;
+      const tipoPedraMensagem = tiposPedra[tipoPedra].message;
+
+      const waText = `Olá!
+
+Efetuei uma simulação na Calculadora de Muro em Pedra.
+
+Localidade: (indicar localidade)
+Tipo de muro: ${tipoMuroMensagem}
+Tipo de pedra: ${tipoPedraMensagem}
+
+Comprimento: ${formatarNumero(comprimento)} m
+Altura: ${formatarNumero(altura)} m
+Largura: ${formatarNumero(largura)} m
+
+Preço estimado: ${formatarNumero(preco)} €
+
+Solicito, se possível, um orçamento personalizado.
+Obrigado.`;
+
+      const waLink = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(waText);
+      const phoneLink = "tel:" + PHONE_NUMBER;
+
+      resultado.innerHTML = `
+        <strong>Resultados da sua estimativa</strong><br>
+        Volume estimado: <b>${formatarNumero(volume)} m³</b><br>
+        Peso aproximado: <b>${formatarNumero(pesoTon, 1)} toneladas</b><br>
+        Paletes/carradas necessárias: <b>${paletes}</b><br>
+        Área frontal do muro: <b>${formatarNumero(area)} m²</b><br>
+        <span class="preco">Preço estimado: <b>${formatarNumero(preco)} €</b></span><br>
+
+        <div class="result-actions">
+          <p><b>Pretende um orçamento personalizado?</b><br>
+          Envie-nos <b>2 fotografias</b>, a <b>localização</b> e as <b>medidas</b> do muro.
+          Analisamos o seu caso e apresentamos um valor ajustado à realidade da obra.</p>
+
+          <p><b>WhatsApp com mensagem pronta:</b><br>
+          O botão abaixo abre o WhatsApp com uma pré-mensagem preenchida automaticamente com os dados da sua simulação.</p>
+
+          <div class="btn-row">
+            <a class="btn-cta btn-whatsapp" href="${waLink}" target="_blank" rel="noopener">Pedir orçamento por WhatsApp</a>
+            <a class="btn-cta btn-phone" href="${phoneLink}">Contactar por telefone</a>
+          </div>
+
+          <div class="small-note">
+            <em>Nota: Esta calculadora fornece apenas uma estimativa base. O valor final poderá variar consoante o acesso ao terreno, desaterro, drenagem, recuos e acabamentos.</em><br>
+            <em>Se preferir, poderá também <a href="index.html#contactos" style="color:#ffd97e;text-decoration:underline;">entrar em contacto connosco aqui</a>.</em>
+          </div>
+        </div>
+      `;
+
+      resultado.style.display = "block";
+    }
+
+    larguraInput.addEventListener("input", function () {
+      this.dataset.editadoManual = "true";
+    });
+
+    tipoMuroSelect.addEventListener("change", function () {
+      larguraInput.dataset.editadoManual = "false";
+      atualizarLargura();
+    });
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      calcularMuro();
+    });
+
+    menuToggle.addEventListener("click", function () {
+      const aberto = siteNav.classList.toggle("is-open");
+      menuToggle.setAttribute("aria-expanded", aberto ? "true" : "false");
+      menuToggle.setAttribute("aria-label", aberto ? "Fechar menu" : "Abrir menu");
+    });
+
+    siteNav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        if (window.innerWidth <= 640) {
+          siteNav.classList.remove("is-open");
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.setAttribute("aria-label", "Abrir menu");
+        }
+      });
+    });
+
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 640) {
+        siteNav.classList.remove("is-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Abrir menu");
+      }
+    });
+
+    document.getElementById("anoAtual").textContent = new Date().getFullYear();
+    tipoMuroSelect.selectedIndex = 1;
+    tipoPedraSelect.selectedIndex = 1;
+    atualizarLargura();
+  </script>
+</body>
+</html>
