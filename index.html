@@ -250,12 +250,17 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.3);
       font-size: 1em;
       min-height: 44px;
+      box-sizing: border-box;
+      white-space: nowrap;
     }
     #whatsapp-button img {
       height: 18px;
       width: 18px;
       display: block;
       filter: brightness(0) invert(1);
+    }
+    .whatsapp-button-label {
+      display: inline;
     }
     .footer-links a {
       color: #fff;
@@ -293,7 +298,19 @@
     will-change: auto;
   }
   .gallery-hint { font-size: 1em; }
-  #whatsapp-button { display: none; }
+  #whatsapp-button {
+    display: flex;
+    right: 12px;
+    bottom: 12px;
+    height: 44px;
+    min-height: 44px;
+    padding: 10px 14px;
+    justify-content: center;
+    border-radius: 999px;
+    gap: 8px;
+    font-size: 0.92em;
+    max-width: calc(100vw - 24px);
+  }
 }
   </style>
 </head>
@@ -485,7 +502,7 @@
 <!-- Botão WhatsApp sempre visível -->
 <a href="https://wa.me/351918519619?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20informa%C3%A7%C3%B5es%20sobre%20os%20vossos%20servi%C3%A7os." target="_blank" rel="noopener noreferrer" id="whatsapp-button" aria-label="Fale connosco no WhatsApp">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="18" height="18" loading="lazy" decoding="async">
-  Fale Connosco
+  <span class="whatsapp-button-label">WhatsApp</span>
 </a>
 
 <script>
