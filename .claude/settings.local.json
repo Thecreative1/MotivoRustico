@@ -2,7 +2,13 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:motivorustico.pt)",
-      "Bash(git fetch *)"
+      "Bash(git fetch *)",
+      "Bash(Get-ChildItem -Path \"E:\\\\Git Projects\\\\GIT_HUB\\\\MotivoRustico-seo-fix\" -Recurse)",
+      "Bash(Select-Object FullName)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(gh api *)"
     ]
   }
 }
