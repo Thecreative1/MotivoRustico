@@ -35,7 +35,33 @@
     "url": "https://motivorustico.pt/",
     "email": "Ct.motivoRustico@gmail.com",
     "description": "Terraplanagem, muros em pedra e limpezas de terrenos em Guimarães e arredores.",
-    "areaServed": "Guimarães, Braga, Minho, Portugal"
+    "areaServed": "Guimarães, Braga, Minho, Portugal",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "3",
+      "bestRating": "5"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": {"@type": "Person", "name": "Marco Paranhos"},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+        "reviewBody": "Contratei a Motivo Rústico para a limpeza de um terreno. O serviço foi agendado e executado dentro do prazo, realizado com qualidade e por um preço justo. Recomendo."
+      },
+      {
+        "@type": "Review",
+        "author": {"@type": "Person", "name": "Paulo Duarte"},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+        "reviewBody": "Contratei esta empresa para construir um muro em pedra na zona de Guimarães e o resultado superou todas as expectativas. Ficou com um acabamento fantástico."
+      },
+      {
+        "@type": "Review",
+        "author": {"@type": "Person", "name": "Karolina Harasim"},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+        "reviewBody": "Contratei a Motivo Rústico para terraplanagem e um muro em pedra. Trabalho rápido, de qualidade e com grande profissionalismo. O Nelson é experiente e acessível. Recomendo!"
+      }
+    ]
   }
   </script>
   <meta name="description" content="Especialistas em terraplanagem, muros em pedra e limpezas de terrenos em Guimarães, Braga e Minho. Orçamentos grátis e trabalho garantido.">
@@ -196,19 +222,55 @@
     /* FIM HERO */
     /* Testemunhos */
     .testemunhos {
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto 50px auto;
-      padding: 40px 10px;
+      padding: 48px 20px 40px;
       background: #f5f5f5;
       border-radius: 12px;
     }
-    .testemunhos blockquote {
-      font-style: italic;
-      border-left: 4px solid #d5972c;
-      margin: 20px 0;
-      padding-left: 18px;
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+    .review-card {
       background: #fff;
-      border-radius: 6px;
+      border-radius: 10px;
+      padding: 20px 18px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .review-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .review-avatar {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .review-name { font-weight: 600; font-size: 0.95em; color: #222; }
+    .review-source { font-size: 0.78em; color: #888; display: flex; align-items: center; gap: 3px; }
+    .review-stars { color: #fbbc04; font-size: 1.05em; letter-spacing: 1px; }
+    .review-text { font-style: italic; color: #444; font-size: 0.93em; line-height: 1.6; margin: 0; }
+    .google-g {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 14px; height: 14px; border-radius: 50%;
+      font-size: 9px; font-weight: 700; font-style: normal;
+      background: #fff; border: 1px solid #dadce0; color: #4285f4;
+    }
+    @media (max-width: 600px) {
+      .review-grid { grid-template-columns: 1fr; }
     }
     .galeria img {
       max-width: 300px;
@@ -457,14 +519,48 @@
 
 <section id="testemunhos" class="testemunhos">
   <h2 style="text-align: center;">Testemunhos de Clientes</h2>
-  <blockquote>
-    “Profissionalismo e rapidez. Recomendo a Motivo Rústico para qualquer trabalho de terraplanagem.”<br>
-    <span style="font-weight: bold;">— António, Guimarães</span>
-  </blockquote>
-  <blockquote>
-    “Excelente qualidade nos muros em pedra! Serviço honesto e muito dedicado.”<br>
-    <span style="font-weight: bold;">— Isabel, Braga</span>
-  </blockquote>
+  <p style="text-align:center; color:#888; margin: 6px 0 0; font-size:0.93em;">
+    ★★★★★ Avaliações reais do Google
+  </p>
+  <div class="review-grid">
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-avatar" style="background:#4285f4;">M</div>
+        <div>
+          <div class="review-name">Marco Paranhos</div>
+          <div class="review-source"><span class="google-g">G</span> Review from Google</div>
+        </div>
+      </div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Contratei a Motivo Rústico para a limpeza de um terreno. O serviço foi agendado e executado dentro do prazo, realizado com qualidade e por um preço justo. Recomendo."</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-avatar" style="background:#ea4335;">P</div>
+        <div>
+          <div class="review-name">Paulo Duarte</div>
+          <div class="review-source"><span class="google-g">G</span> Review from Google</div>
+        </div>
+      </div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Contratei esta empresa para construir um muro em pedra na zona de Guimarães e o resultado superou todas as expectativas. Ficou com um acabamento fantástico."</p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <div class="review-avatar" style="background:#34a853;">K</div>
+        <div>
+          <div class="review-name">Karolina Harasim</div>
+          <div class="review-source"><span class="google-g">G</span> Review from Google</div>
+        </div>
+      </div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Contratei a Motivo Rústico para terraplanagem e um muro em pedra. Trabalho rápido, de qualidade e com grande profissionalismo. O Nelson é experiente e acessível. Recomendo!"</p>
+    </div>
+
+  </div>
 </section>
 
 <section id="contactos" style="padding: 72px 20px 80px; background: #1c1a17;">
