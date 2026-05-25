@@ -11,7 +11,8 @@
       "Bash(gh api *)",
       "mcp__Claude_Preview__preview_start",
       "Bash(grep -n \"html, body\\\\|body {\" \"E:\\\\Git Projects\\\\GIT_HUB\\\\MotivoRustico-seo-fix\\\\index.html\")",
-      "Bash(grep -n \"html, body\\\\|body {\" \"E:\\\\Git Projects\\\\GIT_HUB\\\\MotivoRustico-seo-fix\\\\blog1.html\")"
+      "Bash(grep -n \"html, body\\\\|body {\" \"E:\\\\Git Projects\\\\GIT_HUB\\\\MotivoRustico-seo-fix\\\\blog1.html\")",
+      "WebSearch"
     ]
   }
 }
