@@ -12,7 +12,13 @@
       "mcp__Claude_Preview__preview_start",
       "Bash(grep -n \"html, body\\\\|body {\" \"E:\\\\Git Projects\\\\GIT_HUB\\\\MotivoRustico-seo-fix\\\\index.html\")",
       "Bash(grep -n \"html, body\\\\|body {\" \"E:\\\\Git Projects\\\\GIT_HUB\\\\MotivoRustico-seo-fix\\\\blog1.html\")",
-      "WebSearch"
+      "WebSearch",
+      "mcp__Claude_in_Chrome__list_connected_browsers",
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__Claude_in_Chrome__get_page_text",
+      "mcp__Claude_in_Chrome__find",
+      "mcp__Claude_in_Chrome__browser_batch",
+      "mcp__Claude_in_Chrome__computer"
     ]
   }
 }
