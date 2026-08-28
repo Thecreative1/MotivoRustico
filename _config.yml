@@ -1,0 +1,10 @@
+# Configuração mínima do Jekyll para o GitHub Pages.
+#
+# Único objetivo: impedir que o CLAUDE.md seja publicado no site.
+# Sem isto, o Jekyll converte-o para CLAUDE.html e passa a existir uma
+# página HTML rastreável em motivorustico.pt que não faz parte do site.
+#
+# NÃO adicionar um ficheiro .nojekyll: sem o Jekyll, o Pages passaria a
+# servir também as pastas iniciadas por ponto, expondo .claude/.
+exclude:
+  - CLAUDE.md
