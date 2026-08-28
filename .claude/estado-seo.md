@@ -70,7 +70,7 @@ avaliar o efeito dessas fases.
 
 - Submetido desde 2026-06-15, estado **Success**, última leitura 2026-08-22.
 - **Não é preciso resubmeter** — o Google relê sozinho.
-- 21 URLs, correspondência exata 1:1 com os ficheiros `.html` do repositório, 21/21 a 200.
+- 22 URLs, correspondência exata 1:1 com os ficheiros `.html` do repositório, 22/22 a 200.
 - `lastmod`: atualizado em `/`, `blog1`, `calculadora`, `calculadora-limpeza-terrenos`,
   `manutencao-muros`, `granito`. **As restantes 15 continuam presas em 2026-06-12** apesar de terem sido
   alteradas a 27/08 pelo trabalho de imagens.
@@ -84,6 +84,8 @@ avaliar o efeito dessas fases.
 | `cde8c3f` | Simulador de Limpeza de Terrenos (página nova, zero alterações a ficheiros existentes) |
 | `8170f95` | Ligações para o simulador: `index.html`, `blog1.html`, menu da `calculadora.html`, sitemap |
 | `6a7619b` | Reavivar `manutencao-muros-outono-inverno.html` para a época 2026/2027 |
+| `423ecd5` | Simulador de Terraplanagem (página nova, zero alterações a ficheiros existentes) |
+| `de379a2` | Ligações para o simulador: botão no `index.html`, menu das duas calculadoras, sitemap (22 URLs) |
 
 Todos verificados em produção com comparação antes/depois: superfície SEO idêntica, só adições, zero remoções.
 
@@ -105,6 +107,17 @@ não é falta de conteúdo — é falta de indexação. Atualizar os artigos que
 7. Criar ligações de entrada **a partir de páginas indexadas**.
 8. `lastmod` no sitemap.
 9. Pedir indexação no GSC — só depois de o conteúdo ter mudado mesmo.
+
+### A vigiar
+
+`calculadora-terraplanagem.html` — publicada a 2026-08-28. É a **terceira ferramenta** e a primeira página
+de terraplanagem ligada a partir do `index.html`. Confirmar dentro de 2-3 semanas se foi rastreada e indexada;
+se sim, reforça a tese de que a ligação a partir da homepage é o que resolve a indexação.
+
+Traz também **5 links internos novos** para páginas de terraplanagem que estavam com 1 só link
+(`blog-preco-terraplanagem`, `blog-maquinas-terraplanagem`, `desaterros-piscinas-guimaraes`,
+`drenagem-aguas-pluviais-guimaraes-minho`, `calculadora.html`) — mas partem de uma página ainda não
+indexada, pelo que por agora contam pouco.
 
 ### Próximo alvo
 
