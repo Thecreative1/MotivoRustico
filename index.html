@@ -151,6 +151,18 @@
       nav ul.show { display: flex; }
       nav a { width: 100%; padding: 10px 18px; }
     }
+    /* Cartoes de servico: o paragrafo de gancho cresce para encher o espaco,
+       para os botoes dos tres cartoes ficarem a mesma altura. */
+    .servico {
+      display: flex;
+      flex-direction: column;
+    }
+    .servico p:first-of-type {
+      flex: 1 1 auto;
+    }
+    .servico > a {
+      align-self: center;
+    }
     .servico:hover {
       transform: scale(1.05);
       transition: transform 0.3s ease;
