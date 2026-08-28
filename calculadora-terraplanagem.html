@@ -1,0 +1,1513 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.chatbase.co; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; img-src 'self' data: https://motivorustico.pt https://upload.wikimedia.org https://cdn.jsdelivr.net https://www.google.com https://*.google-analytics.com https://*.chatbase.co; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com; connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com https://www.chatbase.co https://*.chatbase.co; frame-src 'self' https://www.google.com https://www.chatbase.co; manifest-src 'self'; media-src 'self'; form-action 'self'; upgrade-insecure-requests; block-all-mixed-content">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Quanta Terra Vou Mover? Simulador | Motivo Rústico</title>
+  <meta name="description" content="Calcule em 30 segundos quantos m³ de terra tem de mover, quantas cargas de camião dá e quantas horas de máquina demora a terraplanagem do seu terreno.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://motivorustico.pt/calculadora-terraplanagem.html">
+
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:title" content="Quanta Terra Vou Mover? Simulador | Motivo Rústico">
+  <meta property="og:description" content="Simulador gratuito de terraplanagem: metros cúbicos de terra, cargas de camião e horas de máquina para o seu terreno em Guimarães e no Minho.">
+  <meta property="og:image" content="https://motivorustico.pt/img/maquinas-motivo-rustico.jpg">
+  <meta property="og:url" content="https://motivorustico.pt/calculadora-terraplanagem.html">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Quanta Terra Vou Mover? Simulador | Motivo Rústico">
+  <meta name="twitter:description" content="Saiba quantos m³ de terra tem de mover, quantas cargas de camião dá e quantas horas de máquina demora. Orçamentos grátis em Guimarães.">
+  <meta name="twitter:image" content="https://motivorustico.pt/img/maquinas-motivo-rustico.jpg">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Google Consent Mode default. Analytics loads only after explicit acceptance. -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = window.gtag || gtag;
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      functionality_storage: 'granted',
+      security_storage: 'granted'
+    });
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Simulador de Terraplanagem",
+    "url": "https://motivorustico.pt/calculadora-terraplanagem.html",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "inLanguage": "pt-PT",
+    "description": "Simulador gratuito que calcula o volume de terra a mover num terreno, o volume empolado, o número de cargas de camião e as horas de máquina estimadas para a terraplanagem.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Motivo Rústico",
+      "telephone": "+351918519619",
+      "email": "Ct.motivoRustico@gmail.com",
+      "areaServed": "Guimarães, Braga e Minho"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Início",
+        "item": "https://motivorustico.pt/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Simulador de Terraplanagem",
+        "item": "https://motivorustico.pt/calculadora-terraplanagem.html"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Como se calcula a quantidade de terra a mover?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Multiplica-se a área pela espessura de terra a mexer. Numa escavação é a área a multiplicar pela profundidade. Num nivelamento depende do destino da terra: compensada no próprio terreno, ronda a área × desnível ÷ 8; baixando tudo à cota mais baixa, ronda a área × desnível ÷ 2."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Porque é que a terra ocupa mais volume depois de escavada?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chama-se empolamento. A terra escavada fica solta e ocupa mais espaço do que ocupava no terreno: cerca de 25% mais em terra macia, 30% em terra dura com pedra e até 50% em rocha partida. É o volume empolado que enche os camiões, não o volume que estava no terreno."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quantos camiões são precisos para levar a terra?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Um camião basculante leva cerca de 12 m³ de terra solta. O simulador divide o volume empolado por essa capacidade e arredonda para cima, porque não há meias cargas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo demora uma terraplanagem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende do volume, do tipo de terreno e do acesso. Uma retroescavadora a escavar e a carregar camiões rende na ordem de 15 m³ por hora em terra macia; em terra dura com pedra cerca de 9 m³ por hora; em rocha que precisa de martelo pode ficar abaixo de 3 m³ por hora. Um acesso onde só entra mini-escavadora corta o rendimento para menos de metade."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Posso deixar a terra no próprio terreno?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Muitas vezes sim, e é a decisão que mais dinheiro poupa. Tirar da parte alta para encher a parte baixa — corte e aterro compensado — dispensa camiões, transporte e vazadouro. Só não é possível quando a terra não tem qualidade, quando não há espaço para a receber ou quando a cota final tem mesmo de descer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O simulador indica o preço da terraplanagem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não indica preço. A terraplanagem é faturada por hora de máquina, e o valor final depende do rendimento real no terreno, do transporte da máquina até à obra, da distância a vazadouro e de imprevistos como rocha escondida. O simulador dá-lhe a dimensão do trabalho e prepara um pedido de orçamento com esses dados, para lhe darmos um valor ajustado à realidade da obra."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root{
+      --bg:#181510;
+      --bg-soft:#201b14;
+      --panel:#252018;
+      --panel-2:#1a1408;
+      --gold:#ffd97e;
+      --gold-strong:#d5972c;
+      --gold-dark:#bb9046;
+      --text:#ffe7ad;
+      --text-soft:rgba(255,231,173,.84);
+      --border:rgba(255,217,126,.16);
+      --shadow:0 12px 34px rgba(0,0,0,.32);
+      --maxw:1160px;
+      --radius:22px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      min-height:100vh;
+      background:
+        radial-gradient(circle at top, rgba(213,151,44,.10), transparent 28%),
+        linear-gradient(180deg, #1b1712 0%, #15120e 100%);
+      color:var(--text);
+      font-family:'Montserrat', Arial, sans-serif;
+      overflow-x:hidden;
+    }
+
+    a{color:var(--gold)}
+
+    header{
+      background:linear-gradient(90deg, #cf942e, #e3b050 45%, #bf8324 100%);
+      color:#2e220c;
+      box-shadow:0 3px 16px rgba(0,0,0,.16);
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    .topbar{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:14px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+
+    .brand{
+      display:inline-flex;
+      align-items:center;
+      gap:12px;
+      color:#2e220c;
+      text-decoration:none;
+      font-weight:800;
+      letter-spacing:.2px;
+      min-width:0;
+    }
+
+    .brand-mark{
+      min-width:50px;
+      height:50px;
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      background:rgba(46,34,12,.08);
+      border:1px solid rgba(46,34,12,.14);
+      font-size:1.15rem;
+      line-height:1;
+    }
+
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      line-height:1.05;
+    }
+
+    .brand-text small{
+      font-size:.74rem;
+      font-weight:700;
+      opacity:.82;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+    }
+
+    .brand-text span{
+      font-size:1.04rem;
+      font-weight:800;
+    }
+
+    .menu-toggle{
+      display:none;
+      border:0;
+      background:rgba(46,34,12,.08);
+      color:#2e220c;
+      width:46px;
+      height:46px;
+      border-radius:12px;
+      font-size:1.45rem;
+      cursor:pointer;
+    }
+
+    nav{
+      border-top:1px solid rgba(46,34,12,.08);
+      background:rgba(27,20,10,.18);
+      backdrop-filter:blur(8px);
+    }
+
+    .nav-inner{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:12px 18px;
+      display:flex;
+      align-items:center;
+      gap:22px;
+      flex-wrap:wrap;
+    }
+
+    nav a{
+      color:#fff0c9;
+      text-decoration:none;
+      font-weight:700;
+      font-size:.96rem;
+      opacity:.92;
+    }
+
+    nav a.active,
+    nav a:hover{
+      color:var(--gold);
+      opacity:1;
+      text-decoration:underline;
+      text-underline-offset:4px;
+    }
+
+    main{display:block}
+
+    .hero{
+      padding:28px 14px 12px;
+    }
+
+    .hero-grid{
+      max-width:var(--maxw);
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:minmax(0, 1.2fr) minmax(280px, .8fr);
+      gap:24px;
+      align-items:start;
+    }
+
+    .container,
+    .info-panel,
+    .faq{
+      background:linear-gradient(180deg, rgba(36,30,24,.98), rgba(23,18,13,.98));
+      border:1px solid var(--border);
+      box-shadow:var(--shadow);
+      border-radius:var(--radius);
+    }
+
+    .container{
+      padding:28px;
+    }
+
+    .info-panel{
+      padding:24px;
+      background:
+        radial-gradient(circle at top right, rgba(255,217,126,.10), transparent 24%),
+        linear-gradient(180deg, rgba(28,22,16,.98), rgba(18,14,10,.98));
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      background:rgba(255,217,126,.08);
+      border:1px solid rgba(255,217,126,.15);
+      color:var(--gold);
+      border-radius:999px;
+      padding:7px 12px;
+      font-size:.82rem;
+      font-weight:700;
+      letter-spacing:.03em;
+      margin-bottom:12px;
+    }
+
+    h1{
+      margin:0 0 14px;
+      color:#fff0c9;
+      line-height:1.05;
+      font-size:2.2rem;
+      letter-spacing:-.02em;
+    }
+
+    h2{
+      margin:0 0 12px;
+      color:#ffde8a;
+      font-size:1.38rem;
+    }
+
+    .intro,
+    .info-panel p,
+    .faq div,
+    .footer-brand p,
+    .footer-col p{
+      color:var(--text-soft);
+      line-height:1.75;
+      font-size:1rem;
+    }
+
+    .intro{margin:0 0 20px}
+
+    .field-grid{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:14px 16px;
+    }
+
+    .field-full{
+      grid-column:1 / -1;
+    }
+
+    label{
+      display:block;
+      color:#ffde8a;
+      font-weight:700;
+      font-size:.95rem;
+      margin-bottom:8px;
+    }
+
+    input,
+    select{
+      width:100%;
+      min-height:50px;
+      height:50px;
+      padding:12px 14px;
+      border-radius:16px;
+      border:1px solid rgba(255,217,126,.12);
+      background:linear-gradient(180deg, #15110c, #120f0b);
+      color:#fff6de;
+      font-size:1rem;
+      outline:none;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.02);
+      appearance:none;
+      -webkit-appearance:none;
+    }
+
+    input:focus,
+    select:focus{
+      border-color:rgba(255,217,126,.58);
+      box-shadow:0 0 0 4px rgba(255,217,126,.09);
+    }
+
+    select{
+      padding-right:42px;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M6 8l4 4 4-4' stroke='%23ffd97e' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat:no-repeat;
+      background-position:right 14px center;
+      background-size:18px 18px;
+      cursor:pointer;
+    }
+
+    input::placeholder{color:rgba(255,231,173,.45)}
+
+    select option{
+      background:#1a1408;
+      color:#fff6de;
+    }
+
+    select:invalid{
+      color:rgba(255,231,173,.65);
+    }
+
+    button[type="submit"]{
+      margin-top:16px;
+      width:100%;
+      min-height:54px;
+      border:0;
+      border-radius:18px;
+      background:linear-gradient(90deg, #ffd97e, #e7b75d 52%, #c88f31 100%);
+      color:#2b1e06;
+      font-size:1rem;
+      font-weight:800;
+      cursor:pointer;
+      box-shadow:0 10px 24px rgba(0,0,0,.22);
+      transition:transform .15s ease, filter .15s ease;
+    }
+
+    button[type="submit"]:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.04);
+    }
+
+    .field-error{
+      display:none;
+      margin-top:14px;
+      border-radius:16px;
+      padding:12px 14px;
+      background:rgba(154, 29, 29, .18);
+      border:1px solid rgba(255, 124, 124, .22);
+      color:#ffd2d2;
+      line-height:1.6;
+      font-size:.95rem;
+    }
+
+    .hint,
+    .select-note,
+    .small-note{
+      color:rgba(255,231,173,.74);
+      line-height:1.65;
+      font-size:.92rem;
+    }
+
+    .select-note{margin-top:12px}
+    .hint{margin-top:12px}
+
+    .result{
+      display:none;
+      margin-top:16px;
+      border-radius:18px;
+      padding:18px;
+      background:linear-gradient(180deg, rgba(255,217,126,.08), rgba(255,217,126,.03));
+      border:1px solid rgba(255,217,126,.16);
+      color:#fff6de;
+      line-height:1.8;
+      font-size:1rem;
+    }
+
+    .result strong{
+      color:#ffde8a;
+      font-size:1.05rem;
+    }
+
+    .preco{
+      display:inline-block;
+      margin-top:4px;
+      color:#ffd97e;
+      font-size:1.08rem;
+    }
+
+    .result-actions{
+      margin-top:16px;
+      padding-top:16px;
+      border-top:1px solid rgba(255,217,126,.12);
+    }
+
+    .result-actions p{
+      margin:0 0 12px;
+      color:var(--text-soft);
+      line-height:1.7;
+    }
+
+    .btn-row{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:10px;
+      margin-bottom:12px;
+    }
+
+    .btn-cta{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-width:220px;
+      padding:14px 18px;
+      border-radius:16px;
+      text-decoration:none;
+      font-weight:800;
+      transition:transform .15s ease, filter .15s ease;
+    }
+
+    .btn-cta:hover{
+      transform:translateY(-1px);
+      filter:brightness(1.03);
+    }
+
+    .btn-whatsapp{
+      background:linear-gradient(90deg, var(--gold), var(--gold-dark) 95%);
+      color:#3d2b00;
+    }
+
+    .btn-phone{
+      background:#181510;
+      color:var(--gold);
+      border:1px solid rgba(255,217,126,.22);
+    }
+
+    .benefits{
+      display:grid;
+      gap:14px;
+      margin-top:18px;
+    }
+
+    .benefit{
+      display:grid;
+      grid-template-columns:14px 1fr;
+      gap:12px;
+      align-items:start;
+    }
+
+    .benefit-dot{
+      width:14px;
+      height:14px;
+      border-radius:50%;
+      margin-top:5px;
+      background:radial-gradient(circle at center, #ffd97e 0%, #d5972c 70%, #aa741d 100%);
+      box-shadow:0 0 0 4px rgba(255,217,126,.08);
+    }
+
+    .benefit strong{
+      display:block;
+      color:#ffde8a;
+      margin-bottom:4px;
+      font-size:.98rem;
+    }
+
+    .benefit span{
+      display:block;
+      color:var(--text-soft);
+      line-height:1.7;
+      font-size:.95rem;
+    }
+
+    .content-section{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:18px 22px 60px;
+    }
+
+    .faq{
+      padding:26px;
+      line-height:1.75;
+      font-size:1rem;
+    }
+
+    .faq h3{
+      color:var(--gold);
+      font-size:1.05rem;
+      margin:20px 0 6px;
+    }
+
+    .cta{
+      text-align:center;
+      margin:26px auto 0;
+      background:linear-gradient(90deg, #ffd97e, #e7b75d 52%, #c88f31 100%);
+      color:#181510;
+      border-radius:18px;
+      padding:24px 18px;
+      font-size:1.08rem;
+      max-width:620px;
+      font-weight:700;
+      box-shadow:0 10px 24px rgba(0,0,0,.20);
+    }
+
+    .cta a{
+      color:#181510;
+      font-weight:800;
+      text-decoration:underline;
+    }
+
+    .site-footer{
+      margin-top:40px;
+      background:linear-gradient(180deg, rgba(23,19,14,.98), rgba(15,12,9,1));
+      border-top:1px solid rgba(255,217,126,.10);
+    }
+
+    .footer-inner{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:34px 22px 28px;
+      display:grid;
+      grid-template-columns:1.2fr .8fr .9fr;
+      gap:24px;
+    }
+
+    .footer-brand h3,
+    .footer-col h4{
+      margin:0 0 10px;
+      color:#ffde8a;
+    }
+
+    .footer-links{
+      display:grid;
+      gap:8px;
+    }
+
+    .footer-links a,
+    .footer-col a{
+      color:rgba(255,231,173,.84);
+      text-decoration:none;
+      line-height:1.7;
+    }
+
+    .footer-links a:hover,
+    .footer-col a:hover{
+      text-decoration:underline;
+    }
+
+    .footer-bottom{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:0 22px 24px;
+      color:rgba(255,231,173,.64);
+      font-size:.92rem;
+    }
+
+    .whatsapp-float{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:999;
+      background:linear-gradient(90deg, var(--gold), var(--gold-dark) 95%);
+      color:#3d2b00;
+      text-decoration:none;
+      font-weight:800;
+      border-radius:999px;
+      padding:14px 18px;
+      box-shadow:0 8px 20px rgba(0,0,0,.35);
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      transition:transform .15s ease, filter .15s ease;
+    }
+
+    .whatsapp-float:hover{
+      transform:translateY(-2px);
+      filter:brightness(1.05);
+    }
+
+    .whatsapp-float svg{
+      width:20px;
+      height:20px;
+      fill:currentColor;
+    }
+
+    @media (max-width: 920px){
+      .hero-grid{grid-template-columns:1fr}
+      .info-panel{order:-1}
+      .footer-inner{grid-template-columns:1fr 1fr}
+    }
+
+    @media (max-width: 640px){
+      .topbar,
+      .nav-inner,
+      .content-section,
+      .footer-inner,
+      .footer-bottom{
+        padding-left:16px;
+        padding-right:16px;
+      }
+
+      .topbar{
+        padding-top:12px;
+        padding-bottom:12px;
+      }
+
+      .brand-text span{font-size:.95rem}
+      .brand-text small{font-size:.66rem}
+
+      .menu-toggle{
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+      }
+
+      nav{display:none}
+      nav.is-open{display:block}
+
+      .nav-inner{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:14px;
+        padding-top:14px;
+        padding-bottom:14px;
+      }
+
+      .hero{
+        padding:14px 10px 8px;
+      }
+
+      .container,
+      .info-panel,
+      .faq{
+        padding:16px;
+        border-radius:20px;
+      }
+
+      h1{
+        font-size:1.48rem;
+        line-height:1.08;
+      }
+
+      .field-grid{
+        grid-template-columns:1fr;
+        gap:10px 12px;
+      }
+
+      input,
+      select,
+      button[type="submit"]{
+        min-height:48px;
+        height:48px;
+        font-size:16px;
+      }
+
+      .btn-row{
+        flex-direction:column;
+      }
+
+      .btn-cta{
+        width:100%;
+        min-width:100%;
+      }
+
+      .footer-inner{
+        grid-template-columns:1fr;
+        gap:18px;
+      }
+
+      .whatsapp-float{
+        right:10px;
+        bottom:10px;
+        padding:11px 13px;
+        font-size:.9rem;
+      }
+
+      body{
+        padding-bottom:calc(88px + env(safe-area-inset-bottom));
+      }
+    }
+
+    /* --- Simulador de terraplanagem --- */
+    .status-card{
+      margin:14px 0;
+      border-radius:16px;
+      padding:14px 16px;
+      border:1px solid rgba(255,217,126,.18);
+      background:rgba(255,217,126,.06);
+    }
+    .status-card .status-title{
+      display:block;
+      font-weight:700;
+      font-size:1.05rem;
+      margin-bottom:6px;
+    }
+    .status-card p{margin:0;line-height:1.7;font-size:.95rem}
+    .status-yes{
+      background:rgba(154,29,29,.16);
+      border-color:rgba(255,124,124,.26);
+    }
+    .status-yes .status-title{color:#ffb4b4}
+    .status-maybe{
+      background:rgba(213,151,44,.14);
+      border-color:rgba(255,217,126,.3);
+    }
+    .status-maybe .status-title{color:#ffd97e}
+    .status-no{
+      background:rgba(60,132,74,.16);
+      border-color:rgba(126,214,150,.26);
+    }
+    .status-no .status-title{color:#a8e6bb}
+
+    .metric-row{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+      gap:10px;
+      margin:14px 0;
+    }
+    .metric{
+      border-radius:14px;
+      padding:12px 14px;
+      background:rgba(255,217,126,.05);
+      border:1px solid rgba(255,217,126,.12);
+    }
+    .metric span{
+      display:block;
+      font-size:.82rem;
+      color:var(--text-soft);
+      margin-bottom:4px;
+    }
+    .metric b{
+      font-size:1.15rem;
+      color:#ffde8a;
+      line-height:1.3;
+    }
+
+    .is-hidden{display:none}
+
+  </style>
+  <link rel="stylesheet" href="cookie-consent.css">
+</head>
+<body>
+  <header id="site-header">
+    <div class="topbar">
+      <a class="brand" href="index.html" aria-label="Motivo Rústico — Início">
+        <span class="brand-mark">MTR</span>
+        <span class="brand-text">
+          <small>Motivo Rústico</small>
+          <span>Simulador de Terraplanagem</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <nav id="siteNav">
+    <div class="nav-inner">
+      <a href="index.html">Início</a>
+      <a href="index.html#servicos">Serviços</a>
+      <a href="index.html#contactos">Contactos</a>
+      <a href="blog.html">Blog</a>
+      <a href="calculadora.html">Calculadora de Muros</a>
+      <a href="calculadora-limpeza-terrenos.html">Limpeza de Terrenos</a>
+      <a href="calculadora-terraplanagem.html" class="active" aria-current="page">Terraplanagem</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="container">
+          <div class="eyebrow">Simulação rápida e gratuita</div>
+          <h1>Quanta terra vou ter de mover?</h1>
+          <p class="intro">
+            Antes de pedir um orçamento, saiba a dimensão real do trabalho: os metros cúbicos de terra,
+            as cargas de camião e as horas de máquina que o seu terreno vai dar.
+            Para valores de referência do mercado, veja o
+            <a href="blog-preco-terraplanagem.html">guia de preços de terraplanagem 2026</a>.
+          </p>
+
+          <form id="terraForm" novalidate>
+            <div class="field-grid">
+              <div class="field-full">
+                <label for="trabalho">O que precisa de fazer no terreno?</label>
+                <select id="trabalho" name="trabalho" required>
+                  <option value="" selected disabled>Selecione o tipo de trabalho</option>
+                  <option value="nivelar">Nivelar / aplanar um terreno inclinado</option>
+                  <option value="escavar">Escavar / abrir caixa (piscina, fundações, cave)</option>
+                  <option value="aterrar">Aterrar / subir a cota do terreno</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="area">Área a trabalhar</label>
+                <input type="number" step="0.01" min="0" inputmode="decimal" id="area" name="area" placeholder="Ex.: 300">
+              </div>
+
+              <div>
+                <label for="unidade">Unidade</label>
+                <select id="unidade" name="unidade">
+                  <option value="m2" selected>Metros quadrados (m²)</option>
+                  <option value="ha">Hectares (ha)</option>
+                </select>
+              </div>
+
+              <div class="field-full">
+                <label for="medida" id="medidaLabel">Altura, profundidade ou desnível</label>
+                <input type="number" step="0.01" min="0" inputmode="decimal" id="medida" name="medida" placeholder="Ex.: 1.5">
+                <div class="select-note" id="medidaNota">Selecione primeiro o tipo de trabalho.</div>
+              </div>
+
+              <div class="field-full is-hidden" id="destinoCampo">
+                <label for="destino">O que quer fazer à terra?</label>
+                <select id="destino" name="destino">
+                  <option value="equilibrar" selected>Aproveitar no terreno — tirar do alto e encher o baixo</option>
+                  <option value="retirar">Baixar tudo à cota mais baixa e levar a terra</option>
+                </select>
+                <div class="select-note">
+                  Aproveitar a terra no próprio terreno é quase sempre a opção mais barata: não há camiões nem vazadouro.
+                </div>
+              </div>
+
+              <div class="field-full">
+                <label for="terreno">Como é o terreno?</label>
+                <select id="terreno" name="terreno" required>
+                  <option value="" selected disabled>Selecione o tipo de terreno</option>
+                  <option value="terra">Terra macia, saibro ou terreno de cultivo</option>
+                  <option value="compacta">Terra dura, com pedra à mistura</option>
+                  <option value="rocha">Rocha à vista ou terreno que precisa de martelo</option>
+                </select>
+              </div>
+
+              <div class="field-full">
+                <label for="acesso">Como é o acesso ao terreno?</label>
+                <select id="acesso" name="acesso" required>
+                  <option value="" selected disabled>Selecione o tipo de acesso</option>
+                  <option value="bom">Bom — o camião consegue chegar ao terreno</option>
+                  <option value="apertado">Apertado — só entra máquina pequena</option>
+                  <option value="mau">Mau — o camião não entra, é preciso transbordo</option>
+                </select>
+              </div>
+            </div>
+
+            <div id="mensagemErro" class="field-error"></div>
+
+            <div class="hint">
+              Não precisa de medidas exatas. Um valor aproximado chega para perceber a ordem de grandeza do trabalho.
+            </div>
+
+            <button type="submit">Ver a dimensão do meu trabalho</button>
+
+            <div id="resultado" class="result"></div>
+          </form>
+        </div>
+
+        <aside class="info-panel">
+          <h2>O que este simulador lhe dá</h2>
+          <p>
+            A dimensão real da obra antes de qualquer conversa de preço, para saber ao que vai.
+          </p>
+
+          <div class="benefits">
+            <div class="benefit">
+              <div class="benefit-dot"></div>
+              <div>
+                <strong>Os metros cúbicos de terra</strong><br>
+                O volume no terreno e o volume depois de escavado, que é sempre maior — é o que enche os camiões.
+              </div>
+            </div>
+
+            <div class="benefit">
+              <div class="benefit-dot"></div>
+              <div>
+                <strong>Quantas cargas de camião</strong><br>
+                O número de viagens para tirar a terra do terreno, ou zero se a terra ficar no sítio.
+              </div>
+            </div>
+
+            <div class="benefit">
+              <div class="benefit-dot"></div>
+              <div>
+                <strong>Quantas horas de máquina</strong><br>
+                A terraplanagem paga-se à hora de máquina. Damos-lhe uma faixa de horas para o seu caso.
+              </div>
+            </div>
+
+            <div class="benefit">
+              <div class="benefit-dot"></div>
+              <div>
+                <strong>Um pedido de orçamento pronto</strong><br>
+                Abre o WhatsApp com todos os dados preenchidos, para lhe respondermos com um valor à hora ajustado.
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <h2>Como se calcula a terra a mover</h2>
+        <p>
+          A conta é sempre a mesma: <b>área × espessura de terra a mexer</b>. Numa escavação para piscina ou fundações,
+          é a área da caixa a multiplicar pela profundidade. Num terreno inclinado que se quer aplanar, depende do
+          destino da terra — e é aí que a fatura muda de tamanho.
+        </p>
+        <p>
+          Se o corte for <b>compensado com aterro dentro do próprio terreno</b> — tira-se da parte alta e enche-se a
+          parte baixa — move-se cerca de <b>área × desnível ÷ 8</b>. Se o terreno tiver de ficar todo à cota mais baixa
+          e a terra sair dali, sobe para cerca de <b>área × desnível ÷ 2</b>: quatro vezes mais volume, mais os camiões.
+        </p>
+
+        <h2>Porque é que a terra cresce quando é escavada</h2>
+        <p>
+          Chama-se <b>empolamento</b>. A terra no seu lugar está compactada há décadas; assim que é escavada fica solta
+          e passa a ocupar mais espaço. Terra macia aumenta cerca de <b>25%</b>, terra dura com pedra cerca de <b>30%</b>
+          e rocha partida pode chegar aos <b>50%</b>.
+        </p>
+        <p>
+          Na prática: 100 m³ tirados do terreno enchem cerca de 125 m³ de camiões. É a conta que apanha toda a gente de
+          surpresa quando chega a fatura do transporte — e é por isso que este simulador mostra os dois volumes.
+        </p>
+
+        <h2>Aproveitar a terra no terreno poupa dinheiro</h2>
+        <p>
+          Sempre que a terra tem qualidade e há espaço para a receber, o <b>corte e aterro compensado</b> é a melhor
+          solução: move-se menos volume, não há camiões, não há transporte a vazadouro nem taxas de deposição. Em
+          terrenos com muito desnível, chega a ser a diferença entre um dia de máquina e três.
+        </p>
+        <p>
+          Nem sempre é possível. Se a terra for de má qualidade, se não houver onde a pôr, ou se a cota final tiver
+          mesmo de descer — como acontece num <a href="desaterros-piscinas-guimaraes.html">desaterro para piscina</a> —
+          a terra tem de sair. Nesse caso conta o volume empolado e a distância a vazadouro.
+        </p>
+
+        <h2>O que faz subir as horas de máquina</h2>
+        <p>
+          O rendimento varia muito com a máquina e com o terreno. Uma <b>retroescavadora</b> a escavar e a carregar
+          camiões anda na ordem dos <b>15 m³ por hora</b> em terra macia; em terra dura com pedra desce para perto de
+          <b>9 m³ por hora</b>; em rocha que obriga a martelo pode ficar <b>abaixo de 3 m³ por hora</b>. Um acesso
+          apertado, onde só entra a <b>mini-escavadora</b>, corta o rendimento para menos de metade — e um terreno
+          onde o camião não entra obriga a transbordo, que é tempo puro.
+        </p>
+        <p>
+          Contam ainda o transporte da máquina até à obra e a distância ao vazadouro, que não aparecem no terreno mas
+          aparecem no tempo. Para perceber que máquina se justifica em cada caso, veja
+          <a href="blog-maquinas-terraplanagem.html">qual a máquina de terraplanagem ideal para a sua obra</a>.
+        </p>
+
+        <h2>Depois do movimento de terras</h2>
+        <p>
+          Um terreno com desnível corrigido deixa quase sempre um <b>talude</b> — e um talude que fica ao alto sem apoio
+          acaba por escorregar com as chuvas do Minho. A solução tradicional é um muro de suporte em pedra, que pode
+          orçamentar já na nossa <a href="calculadora.html">calculadora de muros em pedra</a>.
+        </p>
+        <p>
+          Vale também a pena pensar na água antes de fechar o terreno: uma
+          <a href="drenagem-aguas-pluviais-guimaraes-minho.html">drenagem de águas pluviais</a> feita durante a
+          terraplanagem custa uma fração do que custa abrir tudo outra vez mais tarde.
+        </p>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <h2>Perguntas frequentes</h2>
+
+        <h3>Como se calcula a quantidade de terra a mover?</h3>
+        <p>
+          Multiplica-se a área pela espessura de terra a mexer. Numa escavação é a área a multiplicar pela profundidade.
+          Num nivelamento depende do destino da terra: compensada no próprio terreno, ronda a área × desnível ÷ 8;
+          baixando tudo à cota mais baixa, ronda a área × desnível ÷ 2.
+        </p>
+
+        <h3>Porque é que a terra ocupa mais volume depois de escavada?</h3>
+        <p>
+          Chama-se empolamento. A terra escavada fica solta e ocupa mais espaço do que ocupava no terreno: cerca de 25%
+          mais em terra macia, 30% em terra dura com pedra e até 50% em rocha partida. É o volume empolado que enche os
+          camiões, não o volume que estava no terreno.
+        </p>
+
+        <h3>Quantos camiões são precisos para levar a terra?</h3>
+        <p>
+          Um camião basculante leva cerca de 12 m³ de terra solta. O simulador divide o volume empolado por essa
+          capacidade e arredonda para cima, porque não há meias cargas.
+        </p>
+
+        <h3>Quanto tempo demora uma terraplanagem?</h3>
+        <p>
+          Depende do volume, do tipo de terreno e do acesso. Uma retroescavadora a escavar e a carregar camiões rende na
+          ordem de 15 m³ por hora em terra macia; em terra dura com pedra cerca de 9 m³ por hora; em rocha que precisa
+          de martelo pode ficar abaixo de 3 m³ por hora. Um acesso onde só entra mini-escavadora corta o rendimento
+          para menos de metade.
+        </p>
+
+        <h3>Posso deixar a terra no próprio terreno?</h3>
+        <p>
+          Muitas vezes sim, e é a decisão que mais dinheiro poupa. Tirar da parte alta para encher a parte baixa —
+          corte e aterro compensado — dispensa camiões, transporte e vazadouro. Só não é possível quando a terra não
+          tem qualidade, quando não há espaço para a receber ou quando a cota final tem mesmo de descer.
+        </p>
+
+        <h3>O simulador indica o preço da terraplanagem?</h3>
+        <p>
+          Não indica preço. A terraplanagem é faturada por hora de máquina, e o valor final depende do rendimento real
+          no terreno, do transporte da máquina até à obra, da distância a vazadouro e de imprevistos como rocha
+          escondida. O simulador dá-lhe a dimensão do trabalho e prepara um pedido de orçamento com esses dados, para
+          lhe darmos um valor ajustado à realidade da obra.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3>Motivo Rústico</h3>
+        <p>
+          Especialistas em terraplanagem, limpeza de terrenos e muros de pedra em Guimarães e no Minho.
+          Este simulador dá uma estimativa de ordem de grandeza e não substitui a visita ao terreno.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Ligações úteis</h4>
+        <div class="footer-links">
+          <a href="index.html">Início</a>
+          <a href="index.html#servicos">Serviços</a>
+          <a href="blog.html">Blog</a>
+          <a href="blog-preco-terraplanagem.html">Guia de preços de terraplanagem</a>
+          <a href="blog-maquinas-terraplanagem.html">Que máquina para a sua obra</a>
+          <a href="calculadora.html">Calculadora de Muros</a>
+          <a href="calculadora-limpeza-terrenos.html">Simulador de Limpeza de Terrenos</a>
+          <a href="index.html#contactos">Contactos</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Pedido de orçamento</h4>
+        <p>
+          Envie a localização do terreno, as medidas aproximadas e algumas fotografias. Fazemos uma análise mais
+          rigorosa e apresentamos uma proposta ajustada.
+        </p>
+        <a href="mailto:Ct.motivoRustico@gmail.com">Ct.motivoRustico@gmail.com</a><br>
+        <a href="tel:+351918519619">+351 918 519 619</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="anoAtual"></span> Motivo Rústico. Todos os direitos reservados.</div>
+  </footer>
+
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/351918519619?text=Olá!%20Pretendo%20um%20orçamento%20para%20terraplanagem.%20Envio%20de%20seguida%20a%20localização%20e%20fotografias%20do%20terreno."
+    target="_blank"
+    rel="noopener"
+    aria-label="Pedir orçamento por WhatsApp"
+  >
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M19.11 17.23c-.27-.13-1.58-.78-1.82-.87-.24-.09-.42-.13-.6.13-.18.27-.69.87-.85 1.05-.16.18-.31.2-.58.07-.27-.13-1.13-.42-2.16-1.33-.8-.71-1.34-1.58-1.49-1.85-.16-.27-.02-.41.12-.55.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.13-.6-1.45-.82-1.99-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.47.07-.71.34-.24.27-.93.91-.93 2.22s.96 2.58 1.09 2.76c.13.18 1.88 2.87 4.56 4.02.64.27 1.13.43 1.52.55.64.2 1.23.17 1.69.1.52-.08 1.58-.65 1.8-1.28.22-.63.22-1.17.16-1.28-.07-.11-.24-.18-.51-.31zM16.02 3.2c-7.06 0-12.79 5.72-12.79 12.78 0 2.24.59 4.43 1.7 6.36L3 29l6.85-1.79a12.77 12.77 0 0 0 6.17 1.57h.01c7.05 0 12.78-5.73 12.78-12.79 0-3.42-1.33-6.64-3.75-9.06A12.7 12.7 0 0 0 16.02 3.2zm0 23.42h-.01a10.6 10.6 0 0 1-5.4-1.48l-.39-.23-4.07 1.07 1.09-3.97-.25-.41a10.57 10.57 0 0 1-1.62-5.63c0-5.85 4.77-10.62 10.63-10.62 2.84 0 5.5 1.1 7.51 3.11a10.54 10.54 0 0 1 3.11 7.51c0 5.86-4.77 10.63-10.6 10.63z"></path>
+    </svg>
+    WhatsApp
+  </a>
+  <script>
+    const WHATSAPP_NUMBER = "351918519619";
+    const PHONE_NUMBER = "+351918519619";
+
+    /* --- Constantes do modelo -----------------------------------------------
+       Valores de referência das estimativas. Se a realidade das obras for
+       outra, ajusta-se aqui e o resto do simulador acompanha.
+    ------------------------------------------------------------------------ */
+    const CAMIAO_M3   = 12;   // m³ de terra solta que leva um camião basculante
+    const JORNADA_H   = 8;    // horas de uma jornada de máquina
+    const MINIMO_H    = 3;    // mínimo faturável: deslocação da máquina + arranque
+    const MANUAL_M3_H = 1;    // m³ por hora à pá e carrinho de mão (só para comparação)
+    const COMPACTACAO = 1.25; // terra trazida para aterro assenta ~20-25% ao compactar
+
+    const form = document.getElementById("terraForm");
+    const mensagemErro = document.getElementById("mensagemErro");
+    const resultado = document.getElementById("resultado");
+    const menuToggle = document.getElementById("menuToggle");
+    const siteNav = document.getElementById("siteNav");
+    const trabalhoSel = document.getElementById("trabalho");
+    const destinoCampo = document.getElementById("destinoCampo");
+    const medidaLabel = document.getElementById("medidaLabel");
+    const medidaNota = document.getElementById("medidaNota");
+    const medidaInput = document.getElementById("medida");
+
+    const trabalhos = {
+      nivelar: {
+        label: "Nivelar / aplanar um terreno inclinado",
+        medida: "Desnível entre o ponto mais alto e o mais baixo",
+        nota: "É a diferença de altura entre as duas pontas do terreno, não o comprimento. Uma parede de um piso tem cerca de 3 m.",
+        exemplo: "Ex.: 1.5"
+      },
+      escavar: {
+        label: "Escavar / abrir caixa",
+        medida: "Profundidade média da escavação",
+        nota: "A fundo médio da caixa. Uma piscina enterrada costuma andar entre 1,50 m e 1,80 m.",
+        exemplo: "Ex.: 1.6"
+      },
+      aterrar: {
+        label: "Aterrar / subir a cota do terreno",
+        medida: "Altura de terra a acrescentar",
+        nota: "Quanto quer subir o terreno em relação à cota atual.",
+        exemplo: "Ex.: 0.8"
+      }
+    };
+
+    const terrenos = {
+      terra:    { label: "Terra macia, saibro ou terreno de cultivo", empolamento: 1.25, densidade: 1.6, rendimento: 15 },
+      compacta: { label: "Terra dura, com pedra à mistura",           empolamento: 1.30, densidade: 1.8, rendimento: 9 },
+      rocha:    { label: "Rocha à vista ou terreno com martelo",      empolamento: 1.50, densidade: 2.2, rendimento: 3 }
+    };
+
+    const acessos = {
+      bom:      { label: "Bom — o camião chega ao terreno",        fator: 1.00 },
+      apertado: { label: "Apertado — só entra máquina pequena",     fator: 0.65 },
+      mau:      { label: "Mau — o camião não entra, há transbordo", fator: 0.45 }
+    };
+
+    const destinos = {
+      equilibrar: "Aproveitar a terra no próprio terreno",
+      retirar:    "Baixar à cota mais baixa e retirar a terra"
+    };
+
+    function formatarNumero(valor, casas = 2) {
+      return new Intl.NumberFormat("pt-PT", {
+        minimumFractionDigits: casas,
+        maximumFractionDigits: casas
+      }).format(valor);
+    }
+
+    function arredondarMeia(valor) {
+      return Math.round(valor * 2) / 2;
+    }
+
+    function formatarHoras(valor) {
+      const v = arredondarMeia(valor);
+      return Number.isInteger(v) ? String(v) : formatarNumero(v, 1);
+    }
+
+    function obterNumero(id) {
+      const campo = document.getElementById(id);
+      return parseFloat(campo.value.trim().replace(",", "."));
+    }
+
+    function mostrarErro(mensagem) {
+      mensagemErro.style.display = "block";
+      mensagemErro.textContent = mensagem;
+    }
+
+    function limparErro() {
+      mensagemErro.style.display = "none";
+      mensagemErro.textContent = "";
+    }
+
+    // Sem camioes a carregar, a maquina rende mais: no corte e aterro compensado
+    // trabalha em continuo, e a espalhar terra trazida rende mais do que a escavar.
+    function bonusRendimento(trabalho, fluxo) {
+      if (trabalho === "aterrar") return 1.4;
+      if (trabalho === "nivelar" && fluxo === "nenhum") return 1.35;
+      return 1;
+    }
+
+    // Volume de terra efetivamente movido, medido no terreno (antes de empolar).
+    function calcularVolume(trabalho, destino, areaM2, medida) {
+      if (trabalho === "escavar") {
+        return { insitu: areaM2 * medida, fluxo: "saida" };
+      }
+      if (trabalho === "aterrar") {
+        return { insitu: areaM2 * medida, fluxo: "entrada" };
+      }
+      // Nivelar: com corte e aterro compensados move-se area x desnivel / 8;
+      // baixando tudo à cota mais baixa, move-se area x desnivel / 2.
+      if (destino === "retirar") {
+        return { insitu: areaM2 * medida / 2, fluxo: "saida" };
+      }
+      return { insitu: areaM2 * medida / 8, fluxo: "nenhum" };
+    }
+
+    function atualizarCamposTrabalho() {
+      const trabalho = trabalhoSel.value;
+      const cfg = trabalhos[trabalho];
+
+      if (!cfg) {
+        medidaLabel.textContent = "Altura, profundidade ou desnível";
+        medidaNota.textContent = "Selecione primeiro o tipo de trabalho.";
+        medidaInput.placeholder = "Ex.: 1.5";
+        destinoCampo.classList.add("is-hidden");
+        return;
+      }
+
+      medidaLabel.textContent = cfg.medida + " (m)";
+      medidaNota.textContent = cfg.nota;
+      medidaInput.placeholder = cfg.exemplo;
+      destinoCampo.classList.toggle("is-hidden", trabalho !== "nivelar");
+    }
+
+    function calcularTerraplanagem() {
+      const trabalho = trabalhoSel.value;
+      const areaValor = obterNumero("area");
+      const unidade = document.getElementById("unidade").value;
+      const medida = obterNumero("medida");
+      const destino = document.getElementById("destino").value;
+      const terreno = document.getElementById("terreno").value;
+      const acesso = document.getElementById("acesso").value;
+
+      limparErro();
+      resultado.style.display = "none";
+      resultado.innerHTML = "";
+
+      if (!trabalhos[trabalho]) {
+        mostrarErro("Escolha o tipo de trabalho que precisa de fazer no terreno.");
+        return;
+      }
+
+      if (!terrenos[terreno] || !acessos[acesso]) {
+        mostrarErro("Indique como é o terreno e como é o acesso — são os dois fatores que mais mexem no tempo de máquina.");
+        return;
+      }
+
+      if (!isFinite(areaValor) || areaValor <= 0) {
+        mostrarErro("Indique a área a trabalhar com um número maior do que zero.");
+        return;
+      }
+
+      if (!isFinite(medida) || medida <= 0) {
+        mostrarErro(trabalhos[trabalho].medida + ": indique um valor em metros maior do que zero.");
+        return;
+      }
+
+      const areaM2 = unidade === "ha" ? areaValor * 10000 : areaValor;
+      const volume = calcularVolume(trabalho, destino, areaM2, medida);
+      const insitu = volume.insitu;
+      const fluxo = volume.fluxo;
+
+      const dadosTerreno = terrenos[terreno];
+      const empolado = insitu * dadosTerreno.empolamento;
+      const toneladas = insitu * dadosTerreno.densidade;
+
+      let cargas = 0;
+      let volumeTransporte = 0;
+      if (fluxo === "saida") {
+        volumeTransporte = empolado;
+        cargas = Math.ceil(empolado / CAMIAO_M3);
+      } else if (fluxo === "entrada") {
+        volumeTransporte = insitu * COMPACTACAO;
+        cargas = Math.ceil(volumeTransporte / CAMIAO_M3);
+      }
+
+      const rendimento = dadosTerreno.rendimento * acessos[acesso].fator * bonusRendimento(trabalho, fluxo);
+      const horasBase = Math.max(insitu / rendimento, MINIMO_H);
+      const horasMin = Math.max(MINIMO_H, horasBase * 0.8);
+      const horasMax = horasBase * 1.3;
+
+      const jornadas = horasMax / JORNADA_H;
+      const notaJornadas = horasMax > JORNADA_H
+        ? " (cerca de " + formatarNumero(jornadas, 1) + " jornadas de " + JORNADA_H + " h)"
+        : "";
+
+      // Cartão de destaque: a leitura que interessa em primeiro lugar.
+      let cartao;
+      if (fluxo === "nenhum") {
+        cartao = {
+          classe: "status-no",
+          titulo: "A terra pode ficar no seu terreno",
+          texto: "Compensando o corte com o aterro dentro do próprio terreno, move <b>" + formatarNumero(insitu, 0) +
+                 " m³</b> de terra e <b>não precisa de camiões</b>: não paga transporte nem vazadouro. " +
+                 "É quase sempre a solução mais barata para aplanar um terreno inclinado."
+        };
+      } else if (fluxo === "entrada") {
+        cartao = {
+          classe: "status-maybe",
+          titulo: "Vai precisar de trazer cerca de " + cargas + (cargas === 1 ? " carga de terra" : " cargas de terra"),
+          texto: "Para subir " + formatarNumero(medida, 2) + " m em " + formatarNumero(areaM2, 0) + " m² são precisos cerca de <b>" +
+                 formatarNumero(insitu, 0) + " m³</b> de terra já assente no lugar — o que dá <b>" + formatarNumero(volumeTransporte, 0) +
+                 " m³</b> a trazer, porque a terra assenta ao ser compactada."
+        };
+      } else {
+        cartao = {
+          classe: "status-maybe",
+          titulo: "São cerca de " + formatarNumero(insitu, 0) + " m³ de terra — " + cargas + (cargas === 1 ? " carga de camião" : " cargas de camião"),
+          texto: "Depois de escavada, essa terra ocupa <b>" + formatarNumero(empolado, 0) + " m³</b> e pesa perto de <b>" +
+                 formatarNumero(toneladas, 0) + " toneladas</b>. É esse volume solto que enche os camiões, e é por aí que se conta o transporte."
+        };
+      }
+
+      const metricaVolume = fluxo === "entrada"
+        ? '<div class="metric"><span>Terra necessária (já assente)</span><b>' + formatarNumero(insitu, 0) + ' m³</b></div>'
+        : '<div class="metric"><span>Terra a mover (no terreno)</span><b>' + formatarNumero(insitu, 0) + ' m³</b></div>';
+
+      const metricaSolta = fluxo === "entrada"
+        ? '<div class="metric"><span>Terra a trazer (solta)</span><b>' + formatarNumero(volumeTransporte, 0) + ' m³</b></div>'
+        : '<div class="metric"><span>Depois de escavada (empolada)</span><b>' + formatarNumero(empolado, 0) + ' m³</b></div>';
+
+      const linhaTransporte = fluxo === "nenhum"
+        ? '<div class="metric"><span>Cargas de camião</span><b>Nenhuma</b></div>'
+        : '<div class="metric"><span>' + (fluxo === "entrada" ? "Cargas a trazer" : "Cargas a retirar") + '</span><b>' + cargas + '</b></div>';
+
+      const notaManual = insitu >= 20
+        ? '<div class="small-note" style="margin-top:12px"><em>A título de comparação: à pá e carrinho de mão, mover ' +
+          formatarNumero(insitu, 0) + ' m³ dava cerca de ' + formatarNumero(insitu / MANUAL_M3_H / JORNADA_H, 0) +
+          ' dias de trabalho de um homem.</em></div>'
+        : "";
+
+      const notaTalude = (trabalho === "nivelar" && medida >= 1.2)
+        ? '<div class="small-note" style="margin-top:12px"><em>Com ' + formatarNumero(medida, 2) +
+          ' m de desnível, o terreno costuma ficar com um talude que precisa de suporte para não escorregar com as chuvas. ' +
+          'Pode estimar essa obra na <a href="calculadora.html" style="color:#ffd97e;text-decoration:underline;">calculadora de muros em pedra</a>.</em></div>'
+        : "";
+
+      const resumoTransporte = fluxo === "nenhum"
+        ? "Sem transporte (terra aproveitada no terreno)"
+        : (fluxo === "entrada" ? cargas + " cargas a trazer" : cargas + " cargas a retirar");
+
+      const waText = "Olá!\n\n" +
+        "Fiz uma simulação no Simulador de Terraplanagem.\n\n" +
+        "Localidade: (indicar localidade)\n" +
+        "Trabalho: " + trabalhos[trabalho].label + "\n" +
+        (trabalho === "nivelar" ? "Destino da terra: " + destinos[destino] + "\n" : "") +
+        "Área: " + formatarNumero(areaM2, 0) + " m²\n" +
+        trabalhos[trabalho].medida + ": " + formatarNumero(medida, 2) + " m\n" +
+        "Terreno: " + dadosTerreno.label + "\n" +
+        "Acesso: " + acessos[acesso].label + "\n" +
+        "Volume estimado: " + formatarNumero(insitu, 0) + " m³ no terreno" +
+        (fluxo === "saida" ? " (" + formatarNumero(empolado, 0) + " m³ soltos)" : "") + "\n" +
+        "Transporte: " + resumoTransporte + "\n" +
+        "Tempo estimado: " + formatarHoras(horasMin) + " a " + formatarHoras(horasMax) + " horas de máquina\n\n" +
+        "Qual é o valor à hora de máquina para este trabalho?\nObrigado.";
+
+      const waLink = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(waText);
+      const phoneLink = "tel:" + PHONE_NUMBER;
+
+      resultado.innerHTML =
+        '<strong>Resultado da sua simulação</strong>' +
+
+        '<div class="status-card ' + cartao.classe + '">' +
+          '<span class="status-title">' + cartao.titulo + '</span>' +
+          '<p>' + cartao.texto + '</p>' +
+        '</div>' +
+
+        '<div class="metric-row">' +
+          metricaVolume +
+          metricaSolta +
+          linhaTransporte +
+          '<div class="metric"><span>Tempo de máquina</span><b>' + formatarHoras(horasMin) + ' a ' + formatarHoras(horasMax) + ' h</b></div>' +
+          '<div class="metric"><span>Peso aproximado</span><b>' + formatarNumero(toneladas, 0) + ' t</b></div>' +
+          '<div class="metric"><span>Área trabalhada</span><b>' + formatarNumero(areaM2, 0) + ' m²</b></div>' +
+        '</div>' +
+
+        '<div class="small-note">' +
+          '<em>O tempo de máquina inclui o trabalho no terreno' + notaJornadas + '. Não inclui a deslocação da máquina ' +
+          'até à obra nem o tempo de viagem dos camiões até vazadouro, que dependem da distância.</em>' +
+        '</div>' +
+
+        notaManual +
+        notaTalude +
+
+        '<div class="result-actions">' +
+          '<p><b>Quer saber quanto custa?</b><br>' +
+          'A terraplanagem é faturada <b>à hora de máquina</b>. Já sabe a dimensão do trabalho — falta só o valor à hora ' +
+          'e a confirmação do rendimento real no seu terreno. Envie-nos a <b>localização</b> e <b>2 fotografias</b> e ' +
+          'respondemos com um valor ajustado.</p>' +
+
+          '<p><b>WhatsApp com mensagem pronta:</b><br>' +
+          'O botão abaixo abre o WhatsApp com os dados da sua simulação já preenchidos.</p>' +
+
+          '<div class="btn-row">' +
+            '<a class="btn-cta btn-whatsapp" href="' + waLink + '" target="_blank" rel="noopener">Pedir orçamento por WhatsApp</a>' +
+            '<a class="btn-cta btn-phone" href="' + phoneLink + '">Contactar por telefone</a>' +
+          '</div>' +
+
+          '<div class="small-note">' +
+            '<em>Nota: esta é uma estimativa de ordem de grandeza a partir das medidas que indicou. O rendimento real ' +
+            'depende do que está debaixo da terra — rocha escondida, água ou entulho mudam as contas — pelo que a ' +
+            'visita ao terreno é sempre gratuita e sem compromisso.</em><br>' +
+            '<em>Se preferir, poderá também <a href="index.html#contactos" style="color:#ffd97e;text-decoration:underline;">entrar em contacto connosco aqui</a>.</em>' +
+          '</div>' +
+        '</div>';
+
+      resultado.style.display = "block";
+    }
+
+    trabalhoSel.addEventListener("change", atualizarCamposTrabalho);
+    atualizarCamposTrabalho();
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      calcularTerraplanagem();
+    });
+
+    menuToggle.addEventListener("click", function () {
+      const aberto = siteNav.classList.toggle("is-open");
+      menuToggle.setAttribute("aria-expanded", aberto ? "true" : "false");
+      menuToggle.setAttribute("aria-label", aberto ? "Fechar menu" : "Abrir menu");
+    });
+
+    siteNav.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        if (window.innerWidth <= 640) {
+          siteNav.classList.remove("is-open");
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.setAttribute("aria-label", "Abrir menu");
+        }
+      });
+    });
+
+    document.getElementById("anoAtual").textContent = new Date().getFullYear();
+  </script>
+  <script src="cookie-consent.js" defer></script>
+<script src="tracking.js" defer></script>
+</body>
+</html>
