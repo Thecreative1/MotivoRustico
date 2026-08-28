@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://motivorustico.pt/</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://motivorustico.pt/blog1.html</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
@@ -47,7 +47,12 @@
   </url>
   <url>
     <loc>https://motivorustico.pt/calculadora.html</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://motivorustico.pt/calculadora-limpeza-terrenos.html</loc>
+    <lastmod>2026-08-28</lastmod>
     <priority>0.90</priority>
   </url>
   <url>
