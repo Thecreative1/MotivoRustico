@@ -506,7 +506,17 @@
       transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s;
     }
     .servico:hover { transform: translateY(-4px); box-shadow: 0 14px 34px rgba(31,28,24,0.10); }
-    .servico > div:first-child { font-size: 2.4em !important; line-height: 1; }
+    /* Foto do servico no topo do cartao, de ponta a ponta */
+    .servico-foto {
+      display: block;
+      width: calc(100% + 48px);
+      height: auto;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      margin: -28px -24px 6px;
+      border-radius: 15px 15px 0 0;
+      background: var(--fundo-alt);
+    }
     .servico h3 { font-size: 1.2em; color: var(--tinta); margin: 14px 0 8px; }
     .servico p { margin: 0 0 12px; line-height: 1.6; }
     /* O botao passa para o fim do cartao (so ordem visual; o HTML nao muda) */
@@ -665,7 +675,7 @@
   <h2 style="text-align: center;">Serviços</h2>
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px;">
     <div class="servico" style="flex: 1 1 250px; max-width: 300px; text-align: center;">
-      <div style="font-size: 3em;">🏗️</div>
+      <img class="servico-foto" src="img/thumbs/nivelamento-terreno-maquina.jpg" alt="Retroescavadora a nivelar um terreno em Guimarães" width="800" height="500" loading="lazy" decoding="async">
       <h3>Terraplanagem</h3>
       <p>Quanta terra vai ter de mover no seu terreno? Use o nosso <strong>Simulador de Terraplanagem</strong> e saiba os metros cúbicos, os camiões e as horas de máquina.</p>
       <a href="/calculadora-terraplanagem.html"
@@ -675,7 +685,7 @@
       <p>Preparação e nivelamento de terrenos em Guimarães, Braga e Minho para todo o tipo de projetos de construção.</p>
     </div>
     <div class="servico" style="flex: 1 1 250px; max-width: 300px; text-align: center;">
-      <div style="font-size: 3em;">🌲</div>
+      <img class="servico-foto" src="img/thumbs/img2.jpg" alt="Terreno limpo junto a muro de pedra no Minho" width="800" height="500" loading="lazy" decoding="async">
       <h3>Limpeza de Terrenos</h3>
       <p>Será que é obrigado a limpar o seu terreno? Use o nosso <strong>Simulador de Limpeza de Terrenos</strong> e saiba em 30 segundos.</p>
       <a href="/calculadora-limpeza-terrenos.html"
@@ -685,7 +695,7 @@
       <p>Remoção de vegetação e limpeza florestal para manter os terrenos seguros e preparados para uso em toda a região do Minho.</p>
     </div>
     <div class="servico" style="flex: 1 1 250px; max-width: 300px; text-align: center;">
-      <div style="font-size: 3em;">🧱</div>
+      <img class="servico-foto" src="img/thumbs/muro-pedra-guimaraes-2025.webp" alt="Equipa da Motivo Rústico a construir um muro em granito" width="800" height="500" loading="lazy" decoding="async">
       <h3>Muros em Pedra</h3>
       <p>Quer saber já quanto pode custar o seu muro em pedra? Use a nossa <strong>Calculadora de Muros</strong> online e receba uma estimativa instantânea!</p>
       <a href="/calculadora.html"
