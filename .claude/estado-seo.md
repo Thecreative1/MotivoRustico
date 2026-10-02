@@ -172,7 +172,7 @@ indexada, pelo que por agora contam pouco.
 - Ligações novas para `manutencao-muros` e o simulador de terraplanagem.
 - Ligação de entrada a partir da `drenagem` (indexada); antes só `blog.html` ligava.
 - `lastmod` do artigo e da `drenagem`.
-- **Falta:** pedir indexação no GSC (utilizador). Confirmar rastreio em 2-3 semanas — a época é dezembro.
+- Indexação pedida no GSC a 2026-10-02. Confirmar rastreio em 2-3 semanas — a época é dezembro.
 
 ---
 
@@ -205,7 +205,7 @@ robots da `piscina`, ordem do blog, ícones externos. O `lastmod` "desatualizado
 - **Níveis de complexidade do simulador de limpeza** (Baixa/Média/Alta). Saem de uma pontuação heurística:
   vegetação 1-4 + acesso 1-3 + sobrantes +1 + área +0-3; ≤4 Baixa, ≤7 Média, >7 Alta.
   Ele é que faz o trabalho e ainda não validou se os limiares batem certo.
-- **Pedir indexação da `manutencao-muros`** no GSC, agora que o conteúdo mudou.
-- **Pedir indexação do artigo do Natal** no GSC (reavivado a 2026-10-02).
+- ~~Pedir indexação da `manutencao-muros` e do artigo do Natal~~ — **pedida a 2026-10-02** (ambas "URL is unknown
+  to Google"; aceites na fila prioritária). Não voltar a pedir. Confirmar rastreio na Inspeção de URL em ~2 semanas.
 - **Validar com o Nelson** as espessuras de tout-venant do artigo do Natal (10 cm a pé, 15-20 cm com carros).
 - Nota: pedidos repetidos de indexação **não aceleram** nada e gastam quota.
