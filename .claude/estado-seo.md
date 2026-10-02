@@ -9,27 +9,24 @@ Propriedade do Search Console: `sc-domain:motivorustico.pt`
 
 ## Indexação — o problema principal
 
-**Só 12 das 21 páginas estão indexadas** (verificado no GSC a 2026-08-28).
+**15 indexadas, 7 por indexar** de 22 no sitemap (GSC, 2026-10-02). Em 2026-08-28 eram 12 indexadas.
+Entraram desde então: `preparar-terreno-piscina` (estava rastreada e não indexada) e as páginas novas
+de agosto. O sitemap foi lido a 2026-09-21 (Success, 22 descobertas).
 
 ### Descobertas mas nunca rastreadas (3)
 
-O Google conhece o URL e nunca o foi buscar. Sintoma típico de poucas ligações internas.
+O Google conhece o URL e nunca o foi buscar. Na Inspeção de URL aparecem como "URL is unknown to Google".
 
 - `blog-terraplanagem-feiras-guimaraes.html`
-- `blog1.html` ← guia de limpeza de terrenos, âncora temática do simulador
-- `manutencao-muros-outono-inverno.html` ← **reavivada a 2026-08-28**, a aguardar novo rastreio
+- `manutencao-muros-outono-inverno.html` ← reavivada a 2026-08-28
+- `preparar-terreno-jardim-natal-ano-novo-guimaraes-minho.html` ← reavivada a 2026-10-02 (antes estava em "rastreada")
 
-### Rastreadas e não indexadas (5)
+### Rastreadas e não indexadas (4)
 
-O Google foi buscá-las e decidiu não as indexar.
-
-| Página | Último rastreio |
-|---|---|
-| `blog6.html` | 2026-07-17 |
-| `desaterros-piscinas-guimaraes.html` | 2026-05-31 |
-| `proteger-terreno-inverno-portugal.html` | 2026-05-09 |
-| `preparar-terreno-jardim-natal-ano-novo-guimaraes-minho.html` | 2026-03-13 |
-| `preparar-terreno-piscina.html` | 2026-02-21 |
+- `blog1.html` ← guia de limpeza de terrenos (antes estava em "descoberta": o Google já a foi buscar)
+- `blog6.html`
+- `desaterros-piscinas-guimaraes.html`
+- `proteger-terreno-inverno-portugal.html`
 
 ### Benignos (2)
 
