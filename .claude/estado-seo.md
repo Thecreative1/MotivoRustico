@@ -101,6 +101,8 @@ Mesma paleta, **zero alterações de texto ou estrutura**. Por escolha do utiliz
 | `b206fe3` | `blog.html`: bloco CSS (grelha de cartões, títulos sem azul por defeito) |
 | `7e4b52e` | Nova folha `artigo.css` + `<link>` nos 8 artigos **não indexados** |
 | `9762568` | `<link>` para `artigo.css` nos 8 artigos **indexados** |
+| `c7b3601` | Banner de cookies encostado ao fundo no telemóvel (`cookie-consent.css/js`, nenhum HTML) |
+| `617063b` | `galeria.html`: bloco CSS (cartões claros, fotos 4:3, lightbox) + Esc fecha o lightbox |
 
 Todos verificados em produção: title, canonical, description, robots, og, h1, h2, JSON-LD, imagens, alts, links
 e texto visível **idênticos** antes/depois; SHA-256 servido = blob; sitemap 22/22 a 200.
