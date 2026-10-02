@@ -58,11 +58,21 @@
     }
   }
 
+  // Altura real do banner, para o CSS subir os botoes flutuantes por cima dele.
+  function syncBannerHeight() {
+    var banner = document.querySelector('.cookie-consent');
+    if (banner) {
+      document.documentElement.style.setProperty('--cookie-consent-h', banner.offsetHeight + 'px');
+    }
+  }
+
   function removeBanner() {
     var banner = document.querySelector('.cookie-consent');
     if (banner) {
       banner.remove();
     }
+    document.documentElement.style.removeProperty('--cookie-consent-h');
+    window.removeEventListener('resize', syncBannerHeight);
   }
 
   function handleChoice(choice) {
@@ -98,6 +108,8 @@
     });
 
     document.body.appendChild(banner);
+    syncBannerHeight();
+    window.addEventListener('resize', syncBannerHeight);
   }
 
   document.addEventListener('DOMContentLoaded', function () {

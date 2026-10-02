@@ -56,19 +56,29 @@
   outline-offset: 2px;
 }
 
+/* Telemovel: barra encostada ao fundo do ecra, em vez de flutuar a meio do
+   conteudo. Os botoes flutuantes (WhatsApp, chat) sobem por cima dela enquanto
+   esta visivel; --cookie-consent-h e definido pelo cookie-consent.js. */
 @media (max-width: 640px) {
   .cookie-consent {
-    right: 12px;
-    bottom: 78px;
-    left: 12px;
+    right: 0;
+    bottom: 0;
+    left: 0;
     flex-direction: column;
     align-items: stretch;
+    gap: 10px;
     width: auto;
-    padding: 14px;
+    padding: 14px 16px calc(14px + env(safe-area-inset-bottom, 0px));
+    border-width: 1px 0 0;
+    border-radius: 16px 16px 0 0;
+    background: #fffcf6;
+    box-shadow: 0 -8px 28px rgba(39, 28, 15, 0.16);
+    animation: cookie-consent-in 0.35s cubic-bezier(0.25, 1, 0.5, 1);
   }
 
   .cookie-consent p {
-    font-size: 0.86rem;
+    font-size: 0.8rem;
+    line-height: 1.45;
   }
 
   .cookie-consent-actions {
@@ -78,6 +88,26 @@
 
   .cookie-consent button {
     width: 100%;
+    min-height: 40px;
     padding: 0 12px;
   }
+
+  body:has(.cookie-consent) {
+    padding-bottom: var(--cookie-consent-h, 130px);
+  }
+
+  body:has(.cookie-consent) #whatsapp-button,
+  body:has(.cookie-consent) .whatsapp-float,
+  body:has(.cookie-consent) #chatbase-bubble-button {
+    bottom: calc(var(--cookie-consent-h, 130px) + 12px) !important;
+  }
+}
+
+@keyframes cookie-consent-in {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cookie-consent { animation: none; }
 }
