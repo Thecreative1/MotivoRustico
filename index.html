@@ -296,11 +296,6 @@
       border-radius: 8px;
       object-fit: cover;
     }
-    .gallery-hint {
-      display: block;
-      font-size: 1.1em;
-      color: #875600;
-    }
     .contact-whatsapp-link {
       color: #0f6b37;
       font-weight: bold;
@@ -379,7 +374,6 @@
     filter: brightness(0.62);
     will-change: auto;
   }
-  .gallery-hint { font-size: 1em; }
   #whatsapp-button {
     display: flex;
     right: 12px;
@@ -423,6 +417,7 @@
     }
     #sobre > h2::after,
     #servicos > h2::after,
+    #galeria > h2::after,
     #testemunhos > h2::after {
       content: "";
       display: block;
@@ -433,6 +428,7 @@
       background: var(--ouro);
     }
     #servicos > h2::after,
+    #galeria > h2::after,
     #testemunhos > h2::after { margin-inline: auto; }
 
     /* Cabecalho */
@@ -536,13 +532,19 @@
 
     /* Galeria */
     #galeria { padding: var(--secao) 20px !important; }
-    .gallery-hint {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.42em;
-      font-weight: 600;
-      margin-top: 8px;
-      color: var(--ouro-texto);
+    .galeria-cta { text-align: center; margin: 32px 0 0; }
+    .galeria-btn {
+      display: inline-block;
+      padding: 13px 28px;
+      border-radius: 999px;
+      background: var(--ouro);
+      color: #181510;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(213,151,44,0.35);
+      transition: background 0.2s;
     }
+    .galeria-btn:hover, .galeria-btn:focus-visible { background: var(--ouro-claro); }
     #galeria .galeria {
       display: grid !important;
       grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
@@ -709,7 +711,7 @@
   </section> <!-- FECHA AQUI ANTES DA GALERIA -->
 <section id="galeria" style="padding: 80px 40px;">
   <h2 style="text-align: center;">
-    Galeria <span class="gallery-hint">clique nas fotos<br>para ver mais</span>
+    Galeria
   </h2>
   <div class="galeria" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px;">
     <a href="galeria.html" style="text-decoration:none;">
@@ -738,6 +740,7 @@
            loading="lazy" width="800" height="450">
     </a>
   </div>
+  <p class="galeria-cta"><a href="galeria.html" class="galeria-btn">Ver todos os trabalhos →</a></p>
   <style>
     .galeria a img {
       width: 240px;
