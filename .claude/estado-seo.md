@@ -71,9 +71,10 @@ avaliar o efeito dessas fases.
 - Submetido desde 2026-06-15, estado **Success**, última leitura 2026-08-22.
 - **Não é preciso resubmeter** — o Google relê sozinho.
 - 22 URLs, correspondência exata 1:1 com os ficheiros `.html` do repositório, 22/22 a 200.
-- `lastmod`: atualizado em `/`, `blog1`, `calculadora`, `calculadora-limpeza-terrenos`,
-  `manutencao-muros`, `granito`. **As restantes 15 continuam presas em 2026-06-12** apesar de terem sido
-  alteradas a 27/08 pelo trabalho de imagens.
+- `lastmod`: em 2026-10-02 comparou-se o **texto visível** de cada página em todo o histórico do git. As
+  datas de 2026-06-12 estão essencialmente certas: o trabalho de imagens de 27/08 e a revisão visual de
+  2026-10-02 não mudaram conteúdo. **Não carimbar datas sem alteração de conteúdo.** `preparar-terreno-piscina`
+  passou a 2026-10-02 (título novo).
 
 ---
 
@@ -93,7 +94,8 @@ Todos verificados em produção com comparação antes/depois: superfície SEO i
 
 ## Publicado em 2026-10-02 — arrumação visual (só CSS)
 
-Mesma paleta, **zero alterações de texto ou estrutura**. Por escolha do utilizador, não se mexeu em microcopy.
+Mesma paleta, só CSS — exceto `ea00031` e `f5939f9`, as duas únicas alterações de texto, ambas na homepage e
+pedidas pelo utilizador.
 
 | Commit | O quê |
 |---|---|
@@ -108,12 +110,28 @@ Mesma paleta, **zero alterações de texto ou estrutura**. Por escolha do utiliz
 | `f5939f9` | `index.html`: H2 "Galeria clique nas fotos para ver mais" → "Galeria"; novo botão "Ver todos os trabalhos →" para `galeria.html` (links 29 → 30) |
 | `69ce245` | `calculadora.html` (muito tráfego): bloco CSS mínimo, preço destacado no resultado. Regressão de 81 casos em produção antes/depois: resultado e link WhatsApp idênticos |
 
-Todos verificados em produção: title, canonical, description, robots, og, h1, h2, JSON-LD, imagens, alts, links
-e texto visível **idênticos** antes/depois; SHA-256 servido = blob; sitemap 22/22 a 200.
+Todos verificados em produção (antes/depois campo a campo, SHA-256 servido = blob, sitemap 22/22 a 200). Nos
+commits só-CSS a superfície SEO ficou idêntica; nos dois de texto as únicas diferenças são as descritas.
 `lastmod` **não** foi atualizado — não houve alteração de conteúdo.
 
 Se aparecer alguma variação no GSC a partir de 2026-10-02, esta revisão é só visual: procurar a causa noutro lado
 primeiro (sazonalidade, rastreio), mas ter esta data presente.
+
+---
+
+## Publicado em 2026-10-02 — achados técnicos
+
+| Commit | O quê |
+|---|---|
+| `d604b4d` | Apagados os 4 `lighthouse-mobile*.json`, 5 `mobile-home*.png` e `docs/test.txt` (agora 404). O PDF de `docs/` fica (`blog6`) |
+| `3218265` | JSON-LD `Article` + `BreadcrumbList` nos 8 artigos sem nenhum. `datePublished` em **ano-mês** (`2025-06`), igual à byline: o dia exato não se sabe (a data de criação no git não bate com o mês visível) e não se inventa. Sem `dateModified` |
+| `8cfd6a5` | `preparar-terreno-piscina`: título 100 → 69 car. (+ og/twitter), meta robots, `lastmod` 2026-10-02 |
+| `d1208ba` | `blog.html`: os mesmos 16 cartões, do mais recente para o mais antigo. `loading="lazy"` trocado para a nova primeira imagem não o ter |
+| `37d202f` | Ícones locais em `img/icons/` (cópias exatas dos SVG externos); 8 páginas não indexadas. Na `proteger`, Font Awesome → SVG inline `currentColor` |
+| `ae0879f` | Ícones locais nas 10 páginas indexadas (só muda o `src`) |
+
+Nenhuma página carrega já ícones de `jsdelivr`, `wikimedia` ou `cdnjs`. Ficam os domínios necessários:
+Google Fonts, Chatbase (só homepage), Google Analytics (após consentimento).
 
 ---
 
@@ -158,16 +176,12 @@ indexada, pelo que por agora contam pouco.
 
 ## Achados por tratar
 
-| Achado | Detalhe |
+| Achado | Estado |
 |---|---|
-| **8 páginas sem JSON-LD** | `blog2`, `blog3`, `blog4`, `blog-maquinas`, `blog-terraplanagem-feiras`, `drenagem`, `preparar-terreno-piscina`, `proteger-terreno-inverno` — quatro com prioridade 0.90 |
-| **4,7 MB de ficheiros de debug públicos** | 4 × `lighthouse-mobile*.json` + 5 × `mobile-home*.png` na raiz, todos a 200. Não estão ligados de lado nenhum nem no sitemap, logo o Google não tem caminho para lá chegar — apagá-los é risco ~zero |
-| **`docs/test.txt`** | Ficheiro vazio de 2 bytes servido publicamente |
-| **Títulos longos** | `granito` (101) e `preparar-terreno-piscina` (100). `manutencao-muros` já corrigido (123 → 56) |
-| **`lastmod` desatualizado** | 15 páginas ainda em 2026-06-12 |
-| **`preparar-terreno-piscina.html` sem `<meta name="robots">`** | Única do site. **Não a prejudica** — o comportamento por omissão é `index, follow` e não há `X-Robots-Tag`. Inconsistência de estilo, não defeito |
-| **5 domínios externos por página** | `cdn.jsdelivr.net` e `upload.wikimedia.org` (ícones sociais), `chatbase.co`, `cdnjs.cloudflare.com`, Google Fonts. Os ícones sociais dariam SVG inline sem risco de indexação |
-| **`blog.html` ordenado do mais antigo para o mais recente** | O guia de preços 2026, o mais recente, fica em último |
+| **Título longo da `granito`** (101 car.) | **Por decidir.** Está indexada apesar do título longo; mudar o título de uma página que ranqueia é a alteração mais arriscada. Rever com o GSC à frente (impressões/CTR da página) antes de mexer |
+
+Resolvidos a 2026-10-02 (ver tabela acima): JSON-LD em falta, ficheiros de debug, `docs/test.txt`, título e
+robots da `piscina`, ordem do blog, ícones externos. O `lastmod` "desatualizado" afinal não era problema (ver Sitemap).
 
 ---
 
