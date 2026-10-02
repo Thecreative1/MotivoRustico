@@ -104,7 +104,8 @@ Mesma paleta, **zero alterações de texto ou estrutura**. Por escolha do utiliz
 | `c7b3601` | Banner de cookies encostado ao fundo no telemóvel (`cookie-consent.css/js`, nenhum HTML) |
 | `617063b` | `galeria.html`: bloco CSS (cartões claros, fotos 4:3, lightbox) + Esc fecha o lightbox |
 | `8fa05ec` | Simuladores de limpeza e terraplanagem: bloco CSS (formulário primeiro no telemóvel, FAQ sem caixa dupla) |
-| `ea00031` | `index.html`: emojis 🏗️🌲🧱 dos serviços trocados por fotos reais (+3 `<img>` com alt, lazy). Única alteração de texto visível da revisão: saem os 3 emojis |
+| `ea00031` | `index.html`: emojis 🏗️🌲🧱 dos serviços trocados por fotos reais (+3 `<img>` com alt, lazy). Saem os 3 emojis |
+| `f5939f9` | `index.html`: H2 "Galeria clique nas fotos para ver mais" → "Galeria"; novo botão "Ver todos os trabalhos →" para `galeria.html` (links 29 → 30) |
 | `69ce245` | `calculadora.html` (muito tráfego): bloco CSS mínimo, preço destacado no resultado. Regressão de 81 casos em produção antes/depois: resultado e link WhatsApp idênticos |
 
 Todos verificados em produção: title, canonical, description, robots, og, h1, h2, JSON-LD, imagens, alts, links
