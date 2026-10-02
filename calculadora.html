@@ -708,6 +708,39 @@
         padding-bottom:calc(88px + env(safe-area-inset-bottom));
       }
     }
+    /* ARRUMACAO VISUAL (2026-10). So apresentacao: nao mexe em texto,
+       estrutura nem JavaScript (calculo e mensagem do WhatsApp intactos). */
+
+    /* Campos com a mesma letra do resto da pagina (estavam em Arial) */
+    input, select, button, textarea { font-family: inherit; }
+
+    /* Perguntas frequentes: linhas com comprimento legivel */
+    .content-section .faq h3,
+    .content-section .faq > div { max-width: 72ch; }
+
+    /* Resultado: o preco estimado e o numero que a pessoa procura */
+    .result .preco {
+      display: block;
+      margin: 12px 0 4px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: rgba(255,217,126,.10);
+      border: 1px solid rgba(255,217,126,.22);
+      line-height: 1.3;
+    }
+    .result .preco b {
+      display: block;
+      margin-top: 4px;
+      font-size: clamp(1.6rem, 1.3rem + 1vw, 2rem);
+      color: #ffde8a;
+      letter-spacing: -0.01em;
+    }
+    .result .preco + br { display: none; }
+
+    /* Telemovel: o formulario aparece primeiro, o painel de beneficios depois */
+    @media (max-width: 920px) {
+      .info-panel { order: 0; }
+    }
   </style>
   <link rel="stylesheet" href="cookie-consent.css">
 </head>
