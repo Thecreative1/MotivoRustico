@@ -163,14 +163,19 @@ Traz também **5 links internos novos** para páginas de terraplanagem que estav
 `drenagem-aguas-pluviais-guimaraes-minho`, `calculadora.html`) — mas partem de uma página ainda não
 indexada, pelo que por agora contam pouco.
 
-### Próximo alvo
+### Reavivado em 2026-10-02 (`7e92a02`)
 
-`preparar-terreno-jardim-natal-ano-novo-guimaraes-minho.html`
+`preparar-terreno-jardim-natal-ano-novo-guimaraes-minho.html`, pela receita acima:
 
-- `datePublished` 2025-11-15, menciona "2025" três vezes e **"2026" nenhuma**
-- **1 único link interno**
-- Não indexada (último rastreio 2026-03-13)
-- Época: novembro/dezembro — atacar em setembro para chegar a tempo
+- Título 92 → 59 car.; meta description nova.
+- Conteúdo novo: calendário de outubro a janeiro; "quanto material para um caminho sem lama"
+  (conta, exemplo, 10 cm a pé / 15-20 cm com carros, +20-30% por compactação). Valores de referência —
+  **por validar com o Nelson**.
+- Byline "Atualizado em outubro de 2026"; `dateModified` 2026-10-02; `datePublished` intacto (2025-11-15).
+- Ligações novas para `manutencao-muros` e o simulador de terraplanagem.
+- Ligação de entrada a partir da `drenagem` (indexada); antes só `blog.html` ligava.
+- `lastmod` do artigo e da `drenagem`.
+- **Falta:** pedir indexação no GSC (utilizador). Confirmar rastreio em 2-3 semanas — a época é dezembro.
 
 ---
 
@@ -191,4 +196,6 @@ robots da `piscina`, ordem do blog, ícones externos. O `lastmod` "desatualizado
   vegetação 1-4 + acesso 1-3 + sobrantes +1 + área +0-3; ≤4 Baixa, ≤7 Média, >7 Alta.
   Ele é que faz o trabalho e ainda não validou se os limiares batem certo.
 - **Pedir indexação da `manutencao-muros`** no GSC, agora que o conteúdo mudou.
+- **Pedir indexação do artigo do Natal** no GSC (reavivado a 2026-10-02).
+- **Validar com o Nelson** as espessuras de tout-venant do artigo do Natal (10 cm a pé, 15-20 cm com carros).
 - Nota: pedidos repetidos de indexação **não aceleram** nada e gastam quota.
