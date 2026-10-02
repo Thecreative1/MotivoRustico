@@ -91,6 +91,26 @@ Todos verificados em produção com comparação antes/depois: superfície SEO i
 
 ---
 
+## Publicado em 2026-10-02 — arrumação visual (só CSS)
+
+Mesma paleta, **zero alterações de texto ou estrutura**. Por escolha do utilizador, não se mexeu em microcopy.
+
+| Commit | O quê |
+|---|---|
+| `056b890` | `index.html`: bloco CSS acrescentado (cabeçalho, hero, Sobre Nós, cartões, galeria, testemunhos, contraste) |
+| `b206fe3` | `blog.html`: bloco CSS (grelha de cartões, títulos sem azul por defeito) |
+| `7e4b52e` | Nova folha `artigo.css` + `<link>` nos 8 artigos **não indexados** |
+| `9762568` | `<link>` para `artigo.css` nos 8 artigos **indexados** |
+
+Todos verificados em produção: title, canonical, description, robots, og, h1, h2, JSON-LD, imagens, alts, links
+e texto visível **idênticos** antes/depois; SHA-256 servido = blob; sitemap 22/22 a 200.
+`lastmod` **não** foi atualizado — não houve alteração de conteúdo.
+
+Se aparecer alguma variação no GSC a partir de 2026-10-02, esta revisão é só visual: procurar a causa noutro lado
+primeiro (sazonalidade, rastreio), mas ter esta data presente.
+
+---
+
 ## Estratégia de conteúdo
 
 **Com 8 páginas por indexar, não criar artigos novos.** Um artigo novo seria a nona página invisível. O problema
