@@ -183,7 +183,20 @@ indexada, pelo que por agora contam pouco.
 
 | Achado | Estado |
 |---|---|
-| **Título longo da `granito`** (101 car.) | **Por decidir.** Está indexada apesar do título longo; mudar o título de uma página que ranqueia é a alteração mais arriscada. Rever com o GSC à frente (impressões/CTR da página) antes de mexer |
+| — | Nenhum por tratar |
+
+### Título da `granito` — alterado a 2026-10-02 (`58b446d`), **a vigiar**
+
+"…força e tradição do Minho — Muros, Fachadas e Técnicas | Motivo Rústico" (101) →
+**"Granito de Guimarães: Muros, Fachadas e Tradição do Minho"** (57). og/twitter iguais; H1, description,
+conteúdo e `lastmod` intactos. Publicado sozinho.
+
+**Linha de base (GSC, 30/06 a 29/09/2026, filtro página):** 36 cliques · 1,1K impressões · CTR 3,3% · posição 4,4.
+Consultas: muros em granito ~59 impr. (3 cliques, pos. 1-2), fachadas ~22 (0 cliques), "minho granitos" 47 (pos. 6).
+Nenhuma consulta sobre força, técnicas ou o castelo — por isso saíram do título.
+
+**Comparar a partir de ~2026-11-01** (4-6 semanas; volume baixo, ~12 cliques/mês). Se as impressões de muros/fachadas
+caírem de forma clara, reverter para o título antigo.
 
 Resolvidos a 2026-10-02 (ver tabela acima): JSON-LD em falta, ficheiros de debug, `docs/test.txt`, título e
 robots da `piscina`, ordem do blog, ícones externos. O `lastmod` "desatualizado" afinal não era problema (ver Sitemap).
